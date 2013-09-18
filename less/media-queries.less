@@ -1,0 +1,1068 @@
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   Screen styles
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+	body {
+		padding: 0;
+		font-size: 90%;
+	}
+	
+	.container {
+		width: 940px;
+		padding: 0 20px;
+	}
+	
+	.full-box {
+		max-width: 940px;
+	}
+
+	.nav-box {
+		margin-right: -470px;
+	}
+
+	.brand {
+		margin-left: -470px;
+	}
+	
+	.nav-button.slider {
+		font-size: 20px;
+	}
+
+	#hero {
+		height: 660px;
+	}
+
+	#mashvid {
+		height: 560px;
+		top: -412px;
+	}
+	
+	h1, h2 {
+		max-width: 1160px;
+	}
+
+	h1 {
+		margin-top: 160px;
+		margin-bottom: 40px;
+	}
+
+	@clientLogoBoxHeight: 150px;
+
+	.client-logo-box {
+		height: @clientLogoBoxHeight;
+		line-height: @clientLogoBoxHeight;
+	}
+
+	#hbo-logo {
+		height: 50px;
+	}
+
+	#chase-logo {
+		height: 30px;
+	}
+
+	#mtv-logo {
+		height: 60px;
+	}
+
+	#poloralphlauren-logo {
+		height: 40px;
+	}
+
+	#starcom-logo {
+		height: 100px;
+	}
+
+	#bigfuel-logo {
+		height: 50px;
+	}
+
+	#nickelodeon-logo {
+		height: 30px;
+	}
+
+	#subway-logo {
+		height: 60px;
+	}
+
+	#livenation-logo {
+		height: 25px;
+	}
+
+	#debeers-logo {
+		height: 35px;
+	}
+
+	#bet-logo {
+		height: 60px;
+	}
+
+	#limited-logo {
+		height: 25px;
+	}
+
+	#starwood-logo {
+		height: 60px;
+	}
+
+	#makovsky-logo {
+		width: 180px;
+	}
+
+	#trutv-logo {
+		height: 60px;
+	}
+
+	#mbooth-logo {
+		height: 100px;
+	}
+
+	#ninewest-logo {
+		height: 15px;
+	}
+
+	#hallpartners-logo {
+		height: 60px;
+	}
+
+	#nowwhat-logo {
+		height: 45px;
+	}
+
+	#unruly-logo {
+		height: 70px;
+	}
+
+	.large-box#contactMessage {
+		height: 390px;
+		width: 570px;
+	}
+
+	input.small-box {
+		width: 320px;
+	}
+
+	.large-box#email {
+		width: 600px;
+	}
+}
+
+@media (max-width: 980px) {
+	body {
+		padding: 0;
+		font-size: 85%;
+	}
+	
+	.container {
+		max-width: 728px;
+		padding: 0 20px;
+	}
+	
+	h1, h2 {
+		max-width: 940px;
+		padding: 0 20px;
+	}
+
+	h1 {
+		margin-top: 140px;
+	}
+	
+	.full-box {
+		max-width: 728px;
+	}
+
+	.large-box {
+		width: auto;
+		max-width: 728px;
+		float: none;
+	}
+
+	.medium-box {
+		max-width: 728px;
+	}
+
+	#mashvid {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		top: 100px;
+		left: 0;
+	}
+
+	#about .small-box {
+		width: 100%;
+		max-width: 940px;
+		text-align: center;
+	}
+
+	.nav-box {
+		float: right;
+		z-index: 8999;
+		top: -150px;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		.transition(top .6s cubic-bezier(.67,.17,.46,.79));
+	}
+
+	.brand {
+		float: left;
+		left: 0;
+		margin: 0;
+	}
+
+	.brand a {
+		padding: 0 20px;
+	}
+
+	// .nav-box .container {
+	// 	top: -200px;
+	// 	width: 100%;
+	// 	max-width: 980px;
+	// 	padding: 0;
+	// 	margin: 0;
+	// 	.transition(top .6s cubic-bezier(.67,.17,.46,.79));
+	// }
+
+	.nav-box {
+		float: none;
+		.box-shadow(0 3px 7px fade(@black, 35%))
+	}
+
+	.nav-button.slider {
+		display: block;
+		padding: 0;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
+		background-color: fade(darken(@blackBlue,10%),95%);
+		color: @white;
+		text-shadow: none;
+		&:hover {
+			background-color: fade(lighten(@black,20%),95%);
+		}
+	}
+
+	@navHeight: 60px;
+
+	.nav-container {
+		height: @navHeight;
+	}
+
+	.nav-button {
+		line-height: @navHeight;
+	}
+
+	.nav-box {
+		top: -190px;
+	}
+
+	.nav-box.navOpen {
+		top: @navHeight;
+	}
+	
+	.nav-button.nav-toggle.large {
+		display: block;
+		z-index: 9001;
+	}
+
+	#hero {
+		height: 620px;
+	}
+
+	@heroButtonWidth: 360px;
+
+	.hero-button-container {
+		width: @heroButtonWidth;
+	}
+
+	@clientLogoBoxHeight: 130px;
+
+	.client-logo-box {
+		height: @clientLogoBoxHeight;
+		line-height: @clientLogoBoxHeight;
+		width: 33.333333%;
+	}
+
+	.client-logo-box:nth-child(-n+4) {
+		border-top: 2px solid white;
+	}
+
+	.client-logo-box:nth-last-child(-n+4) {
+		border-bottom: 1px solid #ccc;
+	}
+
+	.client-logo-box:nth-child(-n+3) {
+		border-top: none;
+	}
+
+	.client-logo-box:nth-last-child(-n+3) {
+		border-bottom: none;
+	}
+
+	.bet, .ninewest {
+		&-logo-box {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	#hbo-logo {
+		height: 40px;
+	}
+
+	#chase-logo {
+		height: 25px;
+	}
+
+	#mtv-logo {
+		height: 50px;
+	}
+
+	#poloralphlauren-logo {
+		height: 35px;
+	}
+
+	#starcom-logo {
+		height: 90px;
+	}
+
+	#bigfuel-logo {
+		height: 40px;
+	}
+
+	#nickelodeon-logo {
+		height: 25px;
+	}
+
+	#subway-logo {
+		height: 40px;
+	}
+
+	#livenation-logo {
+		height: 20px;
+	}
+
+	#debeers-logo {
+		height: 30px;
+	}
+
+	#limited-logo {
+		height: 20px;
+	}
+
+	#starwood-logo {
+		height: 50px;
+	}
+
+	#makovsky-logo {
+		width: 160px;
+	}
+
+	#trutv-logo {
+		height: 50px;
+	}
+
+	#mbooth-logo {
+		height: 90px;
+	}
+
+	#ninewest-logo {
+		height: 15px;
+	}
+
+	#hallpartners-logo {
+		height: 50px;
+	}
+
+	#nowwhat-logo {
+		height: 35px;
+	}
+
+	#unruly-logo {
+		height: 45px;
+	}
+
+	#difference h2 {
+		margin-bottom: 70px;
+	}
+
+	#difference h2 br.show-break {
+		display:inline;
+	}
+
+	@iconCircleSize: 110px;
+
+	.quote-box .icon-circle {
+		position: relative;
+		background: url(../img/paper-texture.jpg);
+		top: -(@iconCircleSize/2);
+	}
+
+	.quote-mark {
+		width: 60px;
+		height: auto;
+	}
+
+	.icon-box {
+		height: 200px;
+		margin-bottom: 50px;
+	}
+
+	.quote-box ul {
+		padding-top: 2em;
+	}
+
+	.icon-circle {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+		height: @iconCircleSize;
+		width: @iconCircleSize;
+		line-height: @iconCircleSize;
+	}
+
+	h3.icon-header {
+		text-align: center;
+		max-width: 260px;
+	}
+
+	#platform-icon-box {
+		line-height: @iconCircleSize
+	}
+
+	#platform-icon {
+		width: 60px;
+		height: auto;
+	}
+
+	#handshake-icon-box {
+		line-height: (@iconCircleSize+10px);
+	}
+
+	#handshake-icon {
+		width: 110px;
+		height: auto;
+	}
+
+	#data-icon-box {
+		line-height: @iconCircleSize;
+	}
+
+	#data-icon {
+		width: 70px;
+		height: auto;
+	}
+
+	#humans-icon-box {
+		line-height: (@iconCircleSize+10px);
+	}
+
+	#humans-icon {
+		width: 70px;
+		height: auto;
+	}
+
+	#curated-icon-box {
+		line-height: @iconCircleSize;
+	}
+
+	#curated-icon {
+		width: 60px;
+		height: auto;
+	}
+
+	#quality-icon-box {
+		line-height: @iconCircleSize;
+	}
+
+	#quality-icon {
+		height: 50px;
+		width: auto;
+		margin-left: 8px;
+	}
+
+	#contact {
+		padding-bottom: 40px;
+	}
+
+	.large-box#contactMessage {
+		margin: 0 auto;
+		width: 96%;
+		padding: 10px 2%;
+		height: 240px;
+		max-width: 728px;
+		margin-bottom: 20px;
+	}
+
+	input.small-box {
+		width: 48%;
+		margin-right: 4%;
+	}
+
+	input.small-box:nth-child(2n+3) {
+		margin-right: 0;
+	}
+
+	.large-box#email {
+		width: 100%;
+		max-width: 728px;
+		margin-bottom: 20px;
+	}
+
+	input#SendButton {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#newsletterMessage {
+		margin-top: 20px;
+	}
+
+//	FOOTER
+
+	.info-box {
+		.half-box;
+	}
+
+	.founded-box {
+		width: 100%;
+		height: 60px;
+		float: left;
+		display: block;
+		position: static;
+	}
+
+	.footer-link {
+		height: 220px;
+		display: block;
+		float: left;
+	}
+
+	.footer-icon {
+		line-height: 180px;
+		height: 180px;
+	}
+
+	.footer-info {
+		margin-top: -50px;
+	}
+
+	.footer-logo {
+		height: 30px;
+		width: auto;
+		position: relative;
+		margin-top: -6px;
+	}
+
+	.founded-text {
+		line-height: 60px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 0;
+		font-size: 80%;
+	}
+	
+	.container {
+		width: auto;
+		max-width: 728px;
+		padding: 0 20px;
+	}
+
+	#hero {
+		height: 560px;
+	}
+
+	h1, h2 {
+		max-width: 748px;
+		padding: 0 10px;
+	}
+
+	h1 {
+		padding: 0 10px;
+		margin-top: 100px;
+	}
+
+	.hero-button-container span {
+		font-size: 16px;
+		height: 24px;
+	}
+
+	@heroButtonHeight: 70px;
+
+	.hero-button {
+		height: @heroButtonHeight;
+		line-height: @heroButtonHeight;
+	}
+
+	.hero-button-container {
+		top: -60px;
+		width: 260px;
+	}
+
+	#hero-button-2 {
+	top: -(@heroButtonHeight/2);
+}
+
+	.small-box {
+		width: 30%;
+		margin-right: 3%;
+	}
+
+	.medium-box {
+		width: 48.5%;
+		margin-right: 3%;
+	}
+
+	.full-box {
+		width: 100%;
+	}
+
+	.small-box .medium-box .large-box {
+		&:last-child {
+			margin-right: 0;
+		}
+	}	
+
+	#mashvid {
+		top: 60px;
+	}
+
+	@playButtonSize: 120px;
+
+	.play-button {
+		width: @playButtonSize;
+		height: @playButtonSize;
+		line-height: @playButtonSize;
+		border-radius: (@playButtonSize/2);
+	}
+
+	.play-button img {
+		margin-left: 5px;
+		height: 40px;
+	}
+
+	#about {
+		height: 560px;
+	}
+
+	.sample-image {
+		width: 94%;
+		position: absolute;
+	}
+
+	#sample-report-page-1 {
+		top: 0;
+		left: 3%;
+	}
+
+	#sample-report-page-2 {
+		top: 20px;
+		left: 0;
+	}
+
+	#sample-report-page-3 {
+		top: 20px;
+		left: 6%;
+	}
+
+	@clientLogoBoxHeight: 115px;
+
+	.client-logo-box {
+		height: @clientLogoBoxHeight;
+		line-height: @clientLogoBoxHeight;
+	}
+
+	.client-logo {
+		height: auto !important;
+		max-height: 50%;
+		max-width: 75%;
+	}
+
+	#hbo-logo, #mtv-logo {
+		max-height: 40%;
+	}
+
+	#mbooth-logo {
+		max-height: 75%;
+	}
+
+	.quote-box ul {
+		padding-top: 3em;
+	}
+
+	h3.icon-header {
+		max-width: 100%;
+	}
+
+	input {
+		height: @heroButtonHeight;
+		line-height: @heroButtonHeight;
+	}
+	
+}
+   
+@media (max-width: 480px) {
+	body {
+		font-size: 65%;
+	}
+
+	.container {
+		width: auto;
+		max-width: 460px;
+		padding: 0 10px;
+	}
+	
+	h1, h2 {
+		max-width: 460px;
+		padding: 0 5px;
+	}
+
+	h1 {
+		margin-top: 80px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.hero-text br.hide-break {
+		display: none;
+	}
+
+	.hero-text br.show-break {
+		display: none;
+	}
+
+	.nav-container .container {
+		padding: 0;
+	}
+
+	#mashwork {
+		padding: 0 10px;
+	}
+
+	#mashwork img {
+		height: 30px;
+	}
+
+	.nav-button.nav-toggle.large {
+		display: none;
+	}
+
+	.nav-button.nav-toggle.small {
+		display: block;
+		z-index: 9001;
+	}
+
+	@playButtonSize: 100px;
+
+	.play-button {
+		width: @playButtonSize;
+		height: @playButtonSize;
+		line-height: @playButtonSize;
+		border-radius: (@playButtonSize/2);
+	}
+
+	.play-button img {
+		margin-left: 5px;
+		height: 34px;
+	}
+
+	#hero {
+		height: 500px;
+	}
+
+	@heroButtonHeight: 60px;
+
+	.hero-button {
+		height: @heroButtonHeight;
+		line-height: @heroButtonHeight;
+	}
+
+	.hero-button-container {
+		top: -54px;
+		width: 260px;
+	}
+
+	#hero-button-2 {
+		top: -(@heroButtonHeight/2);
+	}
+
+	@clientLogoBoxHeight: 100px;
+
+	.client-logo-box {
+		height: @clientLogoBoxHeight;
+		line-height: @clientLogoBoxHeight;
+		width: 50%;
+	}
+
+	.debeers, .limited, .starwood, .unruly{
+		&-logo-box {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	.client-logo-box:nth-child(-n+3) {
+		border-top: 2px solid white;
+	}
+
+	.client-logo-box:nth-child(-n+2) {
+		border-top: none;
+	}
+
+	.quote-box ul {
+		padding-top: 1em;
+	}
+
+	.quote-box li:nth-child(1) {
+		margin-top: 3em;
+	}
+
+	.quote-box li:nth-child(2) {
+		margin-top: 1.5em;
+	}
+
+	.quote-box li:nth-child(3) {
+		margin-top: 3.5em;
+	}
+
+	.quote-box li:nth-child(4) {
+		margin-top: 3em;
+	}
+
+	.quote-box li:nth-child(5) {
+		margin-top: 3em;
+	}
+
+	.quote-box li:nth-child(6) {
+		margin-top: 2em;
+	}
+
+	#difference h2 br.show-break {
+		display: none;
+	}
+
+	#contact {
+		padding-bottom: 0;
+	}
+
+	input {
+		height: @heroButtonHeight;
+		line-height: @heroButtonHeight;
+	}
+
+	input, textarea{
+		font-size: 18px;
+		text-indent: 10px;
+	}
+
+	textarea {
+		text-indent: 0;
+	}
+
+	input.small-box, input.large-box#email, textarea.large-box#contactMessage {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+
+	textarea.large-box#contactMessage {
+		width: 96%;
+	}
+
+	//	FOOTER
+
+	footer {
+		height: 180px;
+	}
+
+	footer .container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.info-box {
+		.half-box;
+	}
+
+	.founded-box {
+		width: 100%;
+		height: 60px;
+		float: left;
+		display: block;
+		position: static;
+		border-top: 1px solid fade(@white,15%);
+	}
+
+	.footer-link {
+		width: 100%;
+		height: 60px;
+		display: block;
+		float: left;
+		text-align: left;
+	}
+
+	.info-box .footer-link {
+		border-top: 1px solid fade(@white,15%);
+		border-bottom: 1px solid @black;
+	}
+
+	.footer-icon {
+		line-height: 60px;
+		height: 60px;
+		width: 60px;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.left .footer-link {
+		text-align: right;
+		border-right: 1px solid @black;
+		.footer-info {
+			text-align: right;
+		}
+	}
+
+	.right .footer-icon {
+		margin-left: 1px;
+		border-left: 1px solid fade(@white,15%);
+	}
+
+	.left .footer-icon {
+		float: right;
+	}
+
+	.right .footer-icon {
+		float: left;
+	}
+
+	.footer-info {
+		display: inline-block;
+		margin-top: 0;
+		text-align: left;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	#map-info {
+		line-height: 1.25em;
+		margin-top: 15px;
+	}
+
+	.footer-logo {
+		height: 30px;
+		width: auto;
+		position: relative;
+		margin-top: -6px;
+	}
+
+	.founded-text {
+		line-height: 60px;
+	}
+
+	#phone-icon {
+		height: 30px;
+		width: auto;
+	}
+
+	#map-icon {
+		height: 30px;
+		width: auto;
+	}
+
+	#facebook-icon {
+		height: 30px;
+		width: auto;
+	}
+
+	#twitter-icon {
+		height: 22px;
+		width: auto;
+	}
+}
+
+
+
+

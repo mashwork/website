@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jared Feldman -- Founder & Managing Partner -- @iamjaredf
+    Mattan Ingram -- Creative Director and Coding -- @mattaningram
+    Megan O'Brien -- Graphic Designer -- @MegaObri
+    Nick DeStefano -- Developer
+
+# THANKS
+
+    Coffee
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr, Easing, MediaElement, Waypoints
+    Sublime Text 2, Espresso, Cyberduck, Rdio

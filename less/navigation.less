@@ -1,0 +1,132 @@
+header {
+	text-align: center;
+}
+
+nav {
+	float: right;
+}
+
+@navHeight: 100px;
+
+.nav-container {
+	height: @navHeight;
+	position: fixed;
+	z-index: 9000;
+	width: 100%;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 40%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 40%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 40%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 40%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 40%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, .75);
+	        box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, .75);
+	transition: height .5s;
+	-moz-transition: height .5s; /* Firefox 4 */
+	-webkit-transition: height .5s; /* Safari and Chrome */
+}
+
+.nav-container.navSmall {
+	height: 60px;
+}
+
+.nav-box {
+	height: @navHeight;
+	position: fixed;
+	z-index: 9001;
+	right: 50%;
+	margin-right: -580px;
+}
+
+.brand {
+	left: 50%;
+	margin-left: -580px;
+	position: fixed;
+	z-index: 9001;
+}
+
+.nav-button {
+	line-height: @navHeight;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	transition: line-height .5s;
+	-moz-transition: line-height .5s; /* Firefox 4 */
+	-webkit-transition: line-height .5s; /* Safari and Chrome */
+	-webkit-tap-highlight-color: transparent;
+}
+
+.nav-button.navSmall {
+	line-height: 60px;
+}
+
+.nav-button.slider {
+	padding: 0 30px;
+	font-size: 24px;
+	font-weight: 300;
+	color: rgb(75,75,75);
+	text-shadow: 0px 2px 1px @white;
+}
+
+.nav-button.slider.active {
+	color: white;
+	font-weight: 400;
+	text-shadow: -1px -1px 0px darken(@red,15%);
+	background: #f25a5c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f25a5c 0%, #ed2326 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f25a5c), color-stop(100%,#ed2326)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f25a5c 0%,#ed2326 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f25a5c 0%,#ed2326 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f25a5c 0%,#ed2326 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f25a5c 0%,#ed2326 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f25a5c', endColorstr='#ed2326',GradientType=0 ); /* IE6-9 */
+}
+
+header a:hover {
+	background-color: rgba(0,0,0,.05);
+	text-decoration: none;
+}
+
+#mashwork img {
+	height: 40px;
+	width: auto;
+	z-index: 0;
+}
+
+.nav-button.nav-toggle {
+	display: none;
+	position: fixed;
+	right: 0;
+	width: 100px;
+	font-size: 28px;
+	text-shadow: 0px 2px 1px @white;
+	cursor: pointer;
+	z-index: 8999;
+}
+
+.nav-button.nav-toggle.small {
+	width: 50px;
+}
+
+.nav-button.nav-toggle:hover {
+	color: @grayDark;
+}
+
+.nav-button.nav-toggle {
+	&.active {
+		background-color: @red;
+		color: @white;
+		text-shadow: -1px -2px 1px darken(@red,15%);
+		font-weight: 400;
+		background: #f25a5c; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f25a5c 0%, #ed2326 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f25a5c), color-stop(100%,#ed2326)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f25a5c 0%,#ed2326 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f25a5c 0%,#ed2326 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f25a5c 0%,#ed2326 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f25a5c 0%,#ed2326 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f25a5c', endColorstr='#ed2326',GradientType=0 ); /* IE6-9 */
+	}
+}

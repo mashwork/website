@@ -1,0 +1,5 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow: /mashwork2013/
+Disallow: /fernserver/

@@ -1,0 +1,92 @@
+h1, h2, h3 {
+	font-family: @headerFontFamily;
+	text-align: center;
+	margin: 0 auto;
+	&.left { text-align: left;}
+	&.right { text-align: right;}
+}
+
+p, a {
+	font-family: @sansFontFamily;
+	font-weight: 300;
+}
+
+input, textarea {
+	font-family: @sansFontFamily;
+	font-weight: 400;
+}
+
+.white {
+	color: @white;
+	text-shadow: 0px 1px 1px black;
+}
+
+.black {
+	color: #4b4b4b;
+}
+
+p a, span a, .text a {
+	cursor: pointer;
+	color: @tealDark;
+	text-shadow: 1px 1px 0 darken(@tealDark,15%);
+	border-bottom: 2px dotted @tealDark;
+	text-decoration: none;
+	padding: 3px 5px 0px 5px;
+	font-size: 1.125em;
+	font-weight: 300;
+}
+
+p a:hover, span a:hover, .text a:hover {
+	background-color: fade(@teal,85%);
+	text-shadow: 0px -1px 1px #184642;
+}
+
+a:hover {
+	color: @white;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+h1 {
+	margin-top: 180px;
+	color: @white;
+	font-size: 5.25em;
+	line-height: 1;
+	font-weight: 700;
+	z-index: 100;
+	text-shadow: 0px 2px 6px rgba(0,0,0,.6);
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-size: 4.25em;
+	line-height: 1;	
+	font-weight: 700;
+}
+
+h2.green {
+	color: @teal;
+	text-shadow: 0px -1px 0px #D1EFEC,
+	0px 2px 0px @black;
+}
+
+h2.red {
+	color: @redLight;
+	text-shadow: 0px 2px 0px #830B0D;
+}
+
+h2.center {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+p {
+	font-size: 1.5em;
+	line-height: 1.35;
+}
+
+p.white {
+	color: rgba(255,255,255,.95);
+}
