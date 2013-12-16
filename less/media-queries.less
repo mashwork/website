@@ -118,6 +118,20 @@
 		margin-bottom: 40px;
 	}
 
+	.canvs-popup {
+		height: 560px;
+		h1 {
+			font-size: 28px;
+		}
+		.popup-image {
+			height: 140px;
+			margin-bottom: 25px;
+		}
+		.popup-message {
+			font-size: 18px;
+		}
+	}
+
 	@clientLogoBoxHeight: 150px;
 
 	.client-logo-box {
@@ -348,6 +362,10 @@
 
 	.hero-button-container {
 		width: @heroButtonWidth;
+	}
+
+	.canvs-popup {
+		top: 60px;
 	}
 
 	@clientLogoBoxHeight: 130px;
@@ -744,6 +762,27 @@
 	#sample-report-page-3 {
 		top: 20px;
 		left: 6%;
+	}
+
+	.canvs-popup {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		position: fixed;
+		z-index: 9999;
+		background-color: rgba(0,20,17,.95);
+		h1 {
+			font-size: 21px;
+			margin-bottom: 5%;
+		}
+		.popup-image {
+			width: 40%;
+			height: auto;
+			margin-bottom: 25px;
+		}
+		.popup-message {
+			font-size: 16px;
+		}
 	}
 
 	@clientLogoBoxHeight: 115px;

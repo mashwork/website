@@ -1,4 +1,4 @@
-	//Animation Function
+//Animation Function
 function animateObject(element_ID, animation) {
 	$(element_ID).addClass(animation + " animated");
 	var wait = window.setTimeout( function(){
@@ -12,6 +12,38 @@ $(document).ready(function(){
 
 //	HIDE VIDEO
 	$('#mashvid').hide();
+
+//	SHOW OVERLAY
+	function showOverlay() {
+		$('.canvs-popup').removeClass('closed');
+	}
+
+	function hideOverlay() {
+		$('.canvs-popup').addClass('closed');
+	}
+	
+	$('.popup-close-button').click(function() {
+		hideOverlay();
+	});
+
+	setTimeout(showOverlay, 1000);
+
+// //	CANVS PREVIEW SIGNUP
+// 	$('.canvs-preview-form').submit(function() {
+// 		$(".popup-message").html("Adding your email address...");
+// 		$.ajax({
+// 			url: 'php/canvs-signup.php', // proper url to your "store-address.php" file
+// 			data: $('.canvs-preview-form').serialize(),
+// 			success: function(msg) {
+// 				$('.popup-message').html(msg);
+// 			},
+// 			error: function() {
+// 				$('.canvs-preview-form input.email').addClass('error');
+// 			}
+// 		});
+// 		return false;
+// 	});
+
 
 //	QUOTE BOX CYCLING
 	$('.fade-box .fade-item');
