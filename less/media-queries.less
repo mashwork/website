@@ -366,6 +366,9 @@
 
 	.canvs-popup {
 		top: 60px;
+		&.closed {
+			right: -100%;
+		}
 	}
 
 	@clientLogoBoxHeight: 130px;
@@ -771,6 +774,9 @@
 		position: fixed;
 		z-index: 9999;
 		background-color: rgba(0,20,17,.95);
+		&.closed {
+			right: -100%;
+		}
 		h1 {
 			font-size: 21px;
 			margin-bottom: 5%;
