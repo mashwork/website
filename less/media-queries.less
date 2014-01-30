@@ -379,10 +379,6 @@
 		border-top: none;
 	}
 
-	// .client-logo-box:nth-last-child(-n+4) {
-	// 	border-bottom: none;
-	// }
-
 	.davidyurman {
 		&-logo-box {
 			display: none;
@@ -821,7 +817,7 @@
    
 @media (max-width: 480px) {
 	body {
-		font-size: 65%;
+		font-size: 55%;
 	}
 
 	.container {
@@ -835,8 +831,27 @@
 		padding: 0 5px;
 	}
 
+	h2 {
+
+	}
+
 	h1 {
 		margin-top: 80px;
+	}
+
+	h2.green {
+		color: @teal;
+		text-shadow: 0px -1px 0px #D1EFEC,
+		0px 1px 0px @black;
+	}
+
+	h2.red {
+		color: @redLight;
+		text-shadow: 0px 1px 0px #830B0D;
+	}
+
+	#contact h2 {
+		text-shadow: 0 1px 0 #000;
 	}
 
 	p {
