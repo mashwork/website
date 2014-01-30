@@ -187,21 +187,21 @@ h1 {
 .canvs-popup {
 	position: absolute;
 	top: 100px;
-	right: 0;
+	left: 0;
 	display: block;
 	width: 360px;
 	padding: 0;
 	height: 620px;
 	max-height: 100%;
 	background-color: rgba(0,20,17,.9);
-	transition: right .5s ease;
+	transition: left .5s ease;
 	z-index: 8999;
 	overflow-y: hidden;
 }
 
 .canvs-popup {
 	&.closed {
-		right: -360px;
+		left: -360px;
 	}
 	h1 {
 		color: lighten(@teal, 20%);
@@ -302,7 +302,7 @@ h1 {
 		text-shadow: none !important;
 		font-size: 24px;
 		font-family: @sansFontFamily;
-		font-weight: 600;
+		font-weight: 500;
 		border: none;
 		&:hover {
 			background-color: darken(@teal,10%);
@@ -460,6 +460,18 @@ h1 {
 
 #audible-logo {
 	width: 160px;
+}
+
+#mondelez-logo {
+	width: 225px;
+}
+
+#johnshopkins-logo {
+	width: 200px;
+}
+
+#mercer-logo {
+	width: 230px;
 }
 
 /* TESTIMONIALS ============================= */
