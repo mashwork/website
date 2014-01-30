@@ -8,6 +8,9 @@
 body {
     font-size: 1em;
     line-height: 1.4;
+    max-width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -57,6 +60,16 @@ html {
 
 body {
 	background-color: @blackBlue;
+}
+
+#home {
+	overflow: hidden;
+	min-width: 100%;
+}
+
+#hero {
+	width: 100%;
+	position: relative;
 }
 
 @footerHeight: 280px;
@@ -187,21 +200,21 @@ h1 {
 .canvs-popup {
 	position: absolute;
 	top: 100px;
-	left: 0;
+	right: 0;
 	display: block;
 	width: 360px;
 	padding: 0;
 	height: 620px;
 	max-height: 100%;
 	background-color: rgba(0,20,17,.9);
-	transition: left .5s ease;
+	transition: right .5s ease;
 	z-index: 8999;
 	overflow-y: hidden;
 }
 
 .canvs-popup {
 	&.closed {
-		left: -360px;
+		right: -360px;
 	}
 	h1 {
 		color: lighten(@teal, 20%);
@@ -324,6 +337,9 @@ h1 {
 #about p {
 	text-align: center;
 	margin-bottom: 40px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sample-image {
