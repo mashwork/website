@@ -302,15 +302,6 @@
 		padding: 0 20px;
 	}
 
-	// .nav-box .container {
-	// 	top: -200px;
-	// 	width: 100%;
-	// 	max-width: 980px;
-	// 	padding: 0;
-	// 	margin: 0;
-	// 	.transition(top .6s cubic-bezier(.67,.17,.46,.79));
-	// }
-
 	.nav-box {
 		float: none;
 		.box-shadow(0 3px 7px fade(@black, 35%))
@@ -383,19 +374,16 @@
 		border-top: 2px solid white;
 	}
 
-	.client-logo-box:nth-last-child(-n+4) {
-		border-bottom: 1px solid #ccc;
-	}
 
 	.client-logo-box:nth-child(-n+3) {
 		border-top: none;
 	}
 
-	.client-logo-box:nth-last-child(-n+1) {
-		border-bottom: none;
-	}
+	// .client-logo-box:nth-last-child(-n+4) {
+	// 	border-bottom: none;
+	// }
 
-	.bet, .ninewest {
+	.davidyurman {
 		&-logo-box {
 			display: none;
 			visibility: hidden;
@@ -932,10 +920,10 @@
 		width: 50%;
 	}
 
-	.debeers, .limited, .starwood, .unruly{
+	.davidyurman {
 		&-logo-box {
-			display: none;
-			visibility: hidden;
+			display: inline-block;
+			visibility: visible;
 		}
 	}
 
@@ -949,6 +937,14 @@
 
 	.client-logo-box:nth-child(-n+2) {
 		border-top: none;
+	}
+
+	.client-logo-box:nth-last-child(-n+4) {
+		border-bottom: 1px solid #ccc;
+	}
+
+	.client-logo-box:nth-last-child(-n+2) {
+		border-bottom: none;
 	}
 
 	.quote-box ul {
