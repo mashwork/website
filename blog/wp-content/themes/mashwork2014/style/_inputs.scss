@@ -1,0 +1,81 @@
+.form-wrap {
+  margin-bottom: 30px;
+  label {
+    display: none;
+  }
+  .form-control {
+    @extend .input-lg;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background-color: tint($gray, 50%);
+    font-weight: 300;
+    padding: 0 15px;
+    height: 45px;
+    @include rem('line-height', 32px);
+    @include rem('font-size', 21px);
+    color: $grayDark;
+    vertical-align: middle;
+    @include placeholder {
+      font-weight: 300;
+      @include rem('font-size', 21px);
+      @include rem('line-height', 32px);
+      color: $grayMed;
+      @include max-width($screen-xs) {
+        @include rem('font-size', 18px);
+      }
+    }
+    &:focus {
+      background-color: white;
+      @include placeholder {
+        transition: opacity 0.5s 0.5s ease; 
+        opacity: 0;
+      }
+    }
+    &:valid {
+      background-color: white;
+    }
+    &.submitted {
+      &:invalid {
+        border-bottom: 1px solid $red;
+      }
+    }
+  }
+}
+
+.form-wrap {
+  margin-bottom: 0;
+  .form-group {
+    margin-bottom: 0;
+  }
+  .mc-field-group {
+    margin-bottom: 30px;
+    @include make-sm-column(12);
+  }
+  .form-name-group {
+    @extend .row;
+    .mc-field-group {
+      @include make-sm-column(6);
+    }
+  }
+  @include max-width($screen-xs) {
+    .mc-field-group {
+      margin-bottom: 15px;
+    }
+    .form-submit {
+      margin-top: 15px;
+    }
+  }
+}
+ 
+.form-submit {
+  margin-top: 30px;
+}
+
+.modal-form-header {
+  .section-description {
+    &.error {
+      color: $red;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+$sansFontFamily:      "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headerFontFamily:    "jaf-bernino-sans-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$slabFontFamily:      "adelle", Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:      Monaco, Menlo, Consolas, "Courier New", monospace;
+
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
+body {
+  font-family: $sansFontFamily;
+  @include rem('font-size',16px);
+  color: $grayDark;
+}
+
+a {
+  color: $gold;
+  &:hover {
+    color: shade($gold, .5);
+    cursor: pointer;
+  }
+}
+
+p {
+  @include rem('font-size', 18px);
+  @include rem('line-height', 24px);
+  font-weight: 300;
+}
+
+b, strong {
+  font-weight: 400;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+  margin: 0;
+}
+
+h1, .modal-title {
+  font-family: $slabFontFamily;
+  font-weight: 400;
+  @include rem('font-size', 36px);
+  @include rem('line-height', 42px);
+  @include max-width($screen-xs) {
+    @include rem('font-size', 28px);
+    @include rem('line-height', 34px);
+  }
+}
+
+h2, h3     {
+  font-family: $headerFontFamily;
+  font-weight: 400;
+}
+
+.site-header {
+  @include rem('font-size', 56px);
+  @include rem('line-height', 74px);
+  letter-spacing: .9px;
+}
+
+h1.section-header {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  color: $grayDark;
+  @extend .center-block;
+  letter-spacing: .5px;
+}
+
+h3 {
+  @include rem('font-size', 18px);
+  @include rem('line-height', 21px);
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+p.section-description {
+  color: $gold;
+  @include rem('font-size', 21px);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  @include max-width($screen-xs) {
+    @include rem('font-size', 18px);
+  }
+}
+
+.content-box h2 {
+  color: $gold;
+  font-weight: 400;
+  @include rem('font-size', 30px);
+  @include rem('line-height', 36px); 
+  margin-bottom: 20px;
+  @include max-width($screen-xs) {
+    @include rem('font-size', 26px);
+    @include rem('line-height', 32px);
+  }
+}

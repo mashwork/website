@@ -1,0 +1,87 @@
+/*
+Theme Name: Mashwork
+Theme URI: Mashwork.com
+Description: Theme for Mashwork website designed by David Caputo.
+Version: 1
+Author: David Caputo
+Author URI: http://theworkofdavidcaputo.com
+
+
+*/
+
+
+#carousel {
+	width:600px;
+	height:150px;	
+	margin:43px 0 0 27px;
+	overflow:hidden;
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:595px;
+	height:120px;
+	border:0px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:1785px;			
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:595px;
+	float:left;
+	height:115px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+        line-height:15px;
+}
+
+#slides li img {
+	padding:4px;
+}
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	text-indent:-999em;
+	float:left;
+	outline:0;
+}
+
+a#prev {
+	background:url(images/arrow.gif) 0 -31px no-repeat; 
+}
+
+a#prev:hover {
+	background:url(images/arrow.gif) 0 0 no-repeat;
+}
+
+a#next {
+	background:url(images/arrow.gif) -32px -31px no-repeat; 
+}
+
+a#next:hover {
+	background:url(images/arrow.gif) -32px 0 no-repeat;
+}
+
+.clear {clear:both}
+
+.titleTest {font-size: 13px; font-weight:bold; margin-top: 5px;}
