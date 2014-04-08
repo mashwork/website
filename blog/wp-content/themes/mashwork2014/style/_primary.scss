@@ -1,22 +1,14 @@
 //STRUCTURE
 
 html {
-  @include size(100%);
 }
 
 body {
   background-color: $offWhite;
-  @include size(100%);
 }
 
 .container {
   position: relative;
-  height: 100%;
-}
-
-.header-content {
-  @include size(100%);
-  @extend .clearfix;
 }
 
 section, .section {
@@ -34,109 +26,41 @@ section, .section {
   margin-bottom: 30px;
 }
 
-//HERO HEADER
+//BLOG HEADER
 
-.hero-header {
+.blog-hero-header {
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
-  min-height: 600px;
   text-align: center;
-  background: $offBlack url("../images/canvs-header-image.jpg") no-repeat center center;
+  background: $offBlack url("../mashwork2014/images/blog-header-image.jpg") no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  @include max-width(1025px) {
-    background-attachment: scroll;
-  }
-  @include max-width($screen-xs) {
-    min-height: 500px;
-  }
-  .container {
-    width: 100%;
-    padding: 0 5px;
-  }
-}
-
-.canvs-login {
-  position: absolute;
-  z-index: 500;
-  top: 15px;
-  right: 15px;
-  height: 30px;
-  line-height: 26px;
-  padding: 0;
-  margin: 0;
-  color: white;
-  opacity: .65;
-  font-family: $headerFontFamily;
-  @include rem('font-size', 18px);
-  @include font-smoothing;
-  transition: opacity .25s linear;
-  span {
-    display: inline-block;
-    margin-right: 5px;
-  }
-  .login-icon {
-    margin-left: 10px;
-    border-radius: 100%;
-    @include size(26px);
-    background-color: $teal;
-    vertical-align: middle;
-    transition: transform .25s $easeOutBack;
-    img {
-      @include size(12px);
-      display: inline-block;
-      vertical-align: middle;
-    }
-    @include max-width($screen-xs) {
-      display: none;
-    }
-  }
-  &:hover {
-    opacity: 1;
-    color: white;
-    text-decoration: none;
-    .login-icon {
-      transform: scale(1.2);
-    }
-  }
-  @include max-width($screen-xs) {
-    position: initial;
-    display: inline-block;
-    margin: 10px 0;
-    margin-bottom: 20px;
-    padding: 0 10px;
-    background-color: transparentize(white,.85);
-    height: 30px;
-    line-height: 30px;
-  }
-}
-
-.hero-header-content {
-  position: relative;
-  top: 45%;
-  margin-top: -260px;  
-  @include max-width($screen-xs) {
-    top: 0;
-    margin-top: 0;
-  }
 }
 
 .branding-wrap {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 30px;
-  // width: 280px;
   @extend .center-block;
-  .logo-introducing {
-    color: white;
-    @include rem('font-size', 21px);
-    font-weight: 300;
+  .mashwork-logo-link, .canvs-logo-link, .brand-divider {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  .canvs-logo-link {
+    top: 4px;
+  }
+  .mashwork-logo {
+    width: 185px;
   }
   .canvs-logo {
-    width: 280px;
+    width: 120px;
   }
-  a:hover {
-    text-decoration: none;
+  .brand-divider {
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0 5px;
   }
   @include max-width($screen-md) {
     .logo-introducing {

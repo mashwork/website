@@ -4856,10 +4856,10 @@ button.close {
 
   .carousel-indicators {
     bottom: 20px; } }
-.clearfix:before, .header-content:before, section:before, .section:before, .section-header-wrap:before, .page-footer:before, .clearfix:after, .header-content:after, section:after, .section:after, .section-header-wrap:after, .page-footer:after {
+.clearfix:before, section:before, .section:before, .section-header-wrap:before, .page-footer:before, .clearfix:after, section:after, .section:after, .section-header-wrap:after, .page-footer:after {
   content: " ";
   display: table; }
-.clearfix:after, .header-content:after, section:after, .section:after, .section-header-wrap:after, .page-footer:after {
+.clearfix:after, section:after, .section:after, .section-header-wrap:after, .page-footer:after {
   clear: both; }
 
 .center-block, h1.section-header, .branding-wrap, .video-play-btn, .site-header, .about-canvs-box p, .actionable-insights-box p, .single-solution-box p {
@@ -5307,22 +5307,11 @@ button:focus {
 .modal-form-header .section-description.error {
   color: #ed2326; }
 
-html {
-  width: 100%;
-  height: 100%; }
-
 body {
-  background-color: whitesmoke;
-  width: 100%;
-  height: 100%; }
+  background-color: whitesmoke; }
 
 .container {
-  position: relative;
-  height: 100%; }
-
-.header-content {
-  width: 100%;
-  height: 100%; }
+  position: relative; }
 
 section, .section {
   padding: 70px 0; }
@@ -5334,99 +5323,33 @@ section, .section {
 .content-box {
   margin-bottom: 30px; }
 
-.hero-header {
+.blog-hero-header {
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
-  min-height: 600px;
   text-align: center;
-  background: #282828 url("../images/canvs-header-image.jpg") no-repeat center center;
+  background: #282828 url("../mashwork2014/images/blog-header-image.jpg") no-repeat center center;
   background-attachment: fixed;
   background-size: cover; }
-  @media screen and (max-width: 1024px) {
-    .hero-header {
-      background-attachment: scroll; } }
-  @media screen and (max-width: 479px) {
-    .hero-header {
-      min-height: 500px; } }
-  .hero-header .container {
-    width: 100%;
-    padding: 0 5px; }
-
-.canvs-login {
-  position: absolute;
-  z-index: 500;
-  top: 15px;
-  right: 15px;
-  height: 30px;
-  line-height: 26px;
-  padding: 0;
-  margin: 0;
-  color: white;
-  opacity: .65;
-  font-family: "jaf-bernino-sans-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: opacity .25s linear; }
-  .canvs-login span {
-    display: inline-block;
-    margin-right: 5px; }
-  .canvs-login .login-icon {
-    margin-left: 10px;
-    border-radius: 100%;
-    width: 26px;
-    height: 26px;
-    background-color: #30bcae;
-    vertical-align: middle;
-    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-    .canvs-login .login-icon img {
-      width: 12px;
-      height: 12px;
-      display: inline-block;
-      vertical-align: middle; }
-    @media screen and (max-width: 479px) {
-      .canvs-login .login-icon {
-        display: none; } }
-  .canvs-login:hover {
-    opacity: 1;
-    color: white;
-    text-decoration: none; }
-    .canvs-login:hover .login-icon {
-      transform: scale(1.2); }
-  @media screen and (max-width: 479px) {
-    .canvs-login {
-      position: initial;
-      display: inline-block;
-      margin: 10px 0;
-      margin-bottom: 20px;
-      padding: 0 10px;
-      background-color: rgba(255, 255, 255, 0.15);
-      height: 30px;
-      line-height: 30px; } }
-
-.hero-header-content {
-  position: relative;
-  top: 45%;
-  margin-top: -260px; }
-  @media screen and (max-width: 479px) {
-    .hero-header-content {
-      top: 0;
-      margin-top: 0; } }
 
 .branding-wrap {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 30px; }
-  .branding-wrap .logo-introducing {
-    color: white;
-    font-size: 21px;
-    font-size: 2.1rem;
-    font-weight: 300; }
+  .branding-wrap .mashwork-logo-link, .branding-wrap .canvs-logo-link, .branding-wrap .brand-divider {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; }
+  .branding-wrap .canvs-logo-link {
+    top: 4px; }
+  .branding-wrap .mashwork-logo {
+    width: 185px; }
   .branding-wrap .canvs-logo {
-    width: 280px; }
-  .branding-wrap a:hover {
-    text-decoration: none; }
+    width: 120px; }
+  .branding-wrap .brand-divider {
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0 5px; }
   @media screen and (max-width: 991px) {
     .branding-wrap .logo-introducing {
       margin-bottom: 5px;

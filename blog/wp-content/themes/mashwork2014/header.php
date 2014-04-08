@@ -28,14 +28,10 @@
 <body>
 
 
-<header class="hero-header">
-  <div class="container"><a href="http://canvs.tv/login" class="canvs-login">Login<span class="login-icon"><img src="images/user-icon.svg"/></span></a>
-    <div class="hero-header-content">
-      <div class="branding-wrap">
-        <p class="logo-introducing">Introducing</p><a href="http://mashwork.com" class="mashwork-logo-link"><img src="wp-content/themes/mashwork2014/images/logos/mashwork-logo-white-red.svg" class="mashwork-logo"/></a><a href="http://canvs.tv" class="canvs-logo-link"><img src="wp-content/themes/mashwork2014/images/logos/canvs-logo-white.svg" class="canvs-logo"/></a>
-      </div>
-      <h1 class="site-header">Social Insights News</h1>
-    </div>
+<header class="blog-hero-header">
+  <div class="container">
+    <div class="branding-wrap"><a href="http://mashwork.com" class="mashwork-logo-link"><img src="wp-content/themes/mashwork2014/images/logos/mashwork-logo-white-red.svg" class="mashwork-logo"/></a><span class="brand-divider">/</span><a href="http://canvs.tv" class="canvs-logo-link"><img src="wp-content/themes/mashwork2014/images/logos/canvs-logo-white.svg" class="canvs-logo"/></a></div>
+    <h1 class="site-header">Social insights news</h1>
   </div>
 </header>
 
