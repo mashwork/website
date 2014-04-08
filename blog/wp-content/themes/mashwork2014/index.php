@@ -21,36 +21,51 @@
 
 	<div class="row">
 	
-		<div class="main-content col-xs-12">
+		<div class="blog-content">
 
-		<?php if (have_posts()) : ?>
+			<div class="post-list">
 
-			<?php while (have_posts()) : the_post(); ?>
+			<?php if (have_posts()) : ?>
 
-				<div id="post-<?php the_ID(); ?>" <?php post_class() ?> >
-					<h2>
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-					</h2>
-					<div class="post-details">
-						<span><?php the_time('F jS, Y') ?>  by <?php the_author() ?> </span>
+				<?php while (have_posts()) : the_post(); ?>
+
+					<div id="post-<?php the_ID(); ?>" <?php post_class() ?> >
+						<div class="row">
+							<div class="post-media">
+							<?php if ( has_post_thumbnail()) : ?>
+							<a href="<?php the_permalink(); ?>" class="thumbnail-link" title="<?php the_title_attribute(); ?>" >
+							<?php the_post_thumbnail('thumbnail'); ?>
+							</a>
+							<?php endif; ?>
+							</div>
+							<div class="post-listing">
+								<h2 class="post-title">
+									<a href="<?php the_permalink() ?>" class="post-title-link" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+								</h2>
+								<div class="post-details">
+									<span><?php the_time('F jS, Y') ?>  by <?php the_author() ?> </span>
+								</div>
+								<div class="entry">
+									<?php the_content('Read more...','true'); ?>
+								</div>
+								<a href="<?php the_permalink(); ?>" class="btn-gold read-more-btn" title="Read more">Read more</a>
+							</div>
+						</div>
 					</div>
-					<div class="entry">
-						<?php the_content('Read the rest of this entry &raquo;'); ?>
-					</div>
-				</div>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-			<?php wp_pagenavi(); ?>
+				<?php wp_pagenavi(); ?>
 
 
-			<?php else : ?>
+				<?php else : ?>
 
-				<h2 class="center">Not Found</h2>
-				<p class="center">Sorry, but you are looking for something that isn't here.</p>
-				<?php get_search_form(); ?>
+					<h2 class="center">Not Found</h2>
+					<p class="center">Sorry, but you are looking for something that isn't here.</p>
+					<?php get_search_form(); ?>
 
-		<?php endif; ?>
+			<?php endif; ?>
+			</div>
 		</div>
 	</div>
 </div>

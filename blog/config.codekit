@@ -5133,7 +5133,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 210044,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/images\/blog-header-image.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/images\/blog-header-image.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -5184,6 +5184,26 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/mashwork2014\/partials\/footer-content.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/partials\/footer-content.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/mashwork2014\/partials\/footer-content.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/partials\/footer-content.jade",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/partials\/footer-content.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/wp-content\/themes\/mashwork2014\/partials\/google-analytics.html": {
 		"fileType": 8192,
@@ -6370,6 +6390,50 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-1140x997.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.02746e+06,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-1140x997.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-1140x997.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-1371x1200.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123093,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-1371x1200.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-1371x1200.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-600x600.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41053,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-600x600.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final-600x600.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 969658,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/wp-cron.php": {
 		"fileType": 8192,

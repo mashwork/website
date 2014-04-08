@@ -38,6 +38,11 @@
 	@include button-size();
 }
 
+.btn-gold {
+	@include button-color($gold);
+	@include button-size();
+}
+
 .btn-gray {
 	@include button-color($gray);
 	@include button-size();

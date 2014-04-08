@@ -4,25 +4,11 @@
  * @subpackage Mashwork
  */
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="" />
 
 <title> Blog - Mashwork</title>
 
 <?php get_header(); ?>
 
-	<div id="content" class="span-24 last">
-	<div id="TitleBox" class="span-24"><h1 class="pageTitle">Blog</h1></div>	
-	<div id="titledivBox" class="span-24"></div><!-- divider -->
-	
-      
-
-<!-- Start Row 1 -->
-<div id="leftMain" class="span-16">
-	
-    <div class="span-16 last">
 
 <!-- Start Loop -->
 
@@ -46,10 +32,6 @@
 	</div>
 
 </div><!-- End Left Main --> 
-
- <!-- Sidebar --> 
-<?php get_sidebar(); ?>
-
 
 </div> 
         

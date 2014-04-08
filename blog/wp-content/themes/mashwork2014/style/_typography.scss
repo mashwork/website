@@ -36,7 +36,7 @@ h1,h2,h3,h4 {
   margin: 0;
 }
 
-h1, .modal-title {
+h1 {
   font-family: $slabFontFamily;
   font-weight: 400;
   @include rem('font-size', 36px);
@@ -47,15 +47,40 @@ h1, .modal-title {
   }
 }
 
-h2, h3     {
+h2     {
   font-family: $headerFontFamily;
   font-weight: 400;
+  @include rem('font-size', 28px);
+  @include rem('line-height', 34px);
 }
 
-.site-header {
+.post-title {
+  font-family: $slabFontFamily;
+  .post-title-link {
+    color: $grayDark;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-title {
   @include rem('font-size', 56px);
   @include rem('line-height', 74px);
   letter-spacing: .9px;
+}
+
+.blog-description {
+  color: $goldLight;
+  letter-spacing: 0.5px;
+  @include rem('font-size', 21px);
+  @include rem('line-height', 26px);
+  @include min-width($screen-md) {
+    margin: 0 60px;
+  }
+  @include min-width($screen-lg) {
+    margin: 0 80px;
+  }
 }
 
 h1.section-header {
@@ -82,17 +107,5 @@ p.section-description {
   margin-bottom: 0;
   @include max-width($screen-xs) {
     @include rem('font-size', 18px);
-  }
-}
-
-.content-box h2 {
-  color: $gold;
-  font-weight: 400;
-  @include rem('font-size', 30px);
-  @include rem('line-height', 36px); 
-  margin-bottom: 20px;
-  @include max-width($screen-xs) {
-    @include rem('font-size', 26px);
-    @include rem('line-height', 32px);
   }
 }
