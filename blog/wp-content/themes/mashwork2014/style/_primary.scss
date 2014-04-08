@@ -101,9 +101,18 @@ section, .section {
     @include make-sm-column(4);
     .thumbnail-link {
       width: 100%;
+      text-align: center;
+      @include max-width($screen-sm) {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 30px;
+      }
       img {
         width: 100%;
         height: auto;
+        @include max-width($screen-sm) {
+          width: 80%;
+        }
       }
     }
   }
@@ -122,6 +131,9 @@ section, .section {
     @include rem('font-size', 20px);
     @include rem('line-height', 24px);
   }
+  .entry {
+    margin-bottom: 20px;
+  }
   .read-more-btn {
     @include button-size(30px, 120px);
     @include rem('font-size', 16px);
@@ -132,10 +144,20 @@ section, .section {
 
 .single-post-content {
   padding: 0 15px;
-  padding-top: 50px;
+  padding-top: 40px;
   width: 800px;
   max-width: 100%;
   @include center-block;
+  .post {
+    margin-bottom: 30px;
+  }
+}
+
+.post-navigation {
+  margin-bottom: 30px;
+  a {
+    @include rem('font-size', 18px);
+  }
 }
 
 .single-post {
@@ -219,5 +241,23 @@ section, .section {
   margin: 0;
   img {
     @include size(50px);
+  }
+}
+
+//404 Styles
+
+.error404-wrap {
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+  .error404 {
+    color: $mashRed;
+    @include rem('font-size', 180px);
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .error-description {
+    @include rem('font-size', 21px);
+    line-height: 1;
   }
 }

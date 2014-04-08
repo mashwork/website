@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Mashwork
+ * @subpackage Mashwork2014
  */
 ?>
 
@@ -46,7 +46,7 @@
 									<span><?php the_time('F jS, Y') ?>  by <?php the_author() ?> </span>
 								</div>
 								<div class="entry">
-									<?php the_content('Read more...','true'); ?>
+									<?php the_excerpt(); ?>
 								</div>
 								<a href="<?php the_permalink(); ?>" class="btn-gold read-more-btn" title="Read more">Read more</a>
 							</div>
@@ -54,15 +54,6 @@
 					</div>
 
 				<?php endwhile; ?>
-
-				<?php wp_pagenavi(); ?>
-
-
-				<?php else : ?>
-
-					<h2 class="center">Not Found</h2>
-					<p class="center">Sorry, but you are looking for something that isn't here.</p>
-					<?php get_search_form(); ?>
 
 			<?php endif; ?>
 			</div>

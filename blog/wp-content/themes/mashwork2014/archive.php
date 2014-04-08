@@ -98,9 +98,6 @@
 
 </div><!-- End Left Main --> 
 
- <!-- Sidebar --> 
-<?php get_sidebar(); ?>
-
 
 </div> 
         

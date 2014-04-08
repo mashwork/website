@@ -68,6 +68,12 @@ h2     {
   @include rem('font-size', 56px);
   @include rem('line-height', 74px);
   letter-spacing: .9px;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .blog-description {
