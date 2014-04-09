@@ -21,7 +21,21 @@
 				<h1 class="post-title"><?php the_title(); ?></h1>
 
 				<div class="post-details">
-					<span><?php the_time('F jS, Y') ?>  by <?php the_author() ?> </span>
+					<span><?php the_time('F jS, Y') ?>  by <?php the_author() ?> about <?php the_category(', ') ?></span>
+				</div>
+
+				<div class="share-links-wrap">
+					<ul class="share-links-list">
+						<li class="twitter-share-link">
+							<a rel="nofollow" target="_blank" href="http://twitter.com/share?text=<?php the_title(); ?>&url=<?php the_permalink() ?>&via=mashwork" title="Share to Twitter">Twitter</a>
+						</li>
+						<li class="facebook-share-link">
+							<a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" title="Share to Facebook">Facebook</a>
+						</li>
+						<li class="linkedin-share-link">
+							<a rel="nofollow" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&summary=&source=<?php get_home_url(); ?>" title="Share to LinkedIn">LinkedIn</a>
+						</li>
+					</ul>
 				</div>
 
 				<div class="entry">

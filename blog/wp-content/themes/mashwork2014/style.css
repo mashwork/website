@@ -5547,10 +5547,12 @@ section, .section {
     margin-bottom: 20px;
     font-style: italic;
     font-weight: 300;
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 24px;
     line-height: 2.4rem; }
+    .post .post-details a {
+      font-weight: 400; }
   .post .entry {
     margin-bottom: 20px; }
   .post .read-more-btn {
@@ -5586,6 +5588,19 @@ section, .section {
 .single-post .entry img {
   max-width: 100%;
   height: auto; }
+
+.share-links-list {
+  list-style: none;
+  text-align: center; }
+  .share-links-list li {
+    display: inline-block;
+    margin: 0 5px; }
+    .share-links-list li a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #777777;
+      color: white; }
 
 .page-footer {
   background-color: #282828;
