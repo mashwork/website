@@ -27,19 +27,24 @@
 				<div class="share-links-wrap">
 					<ul class="share-links-list">
 						<li class="twitter-share-link">
-							<a rel="nofollow" target="_blank" href="http://twitter.com/share?text=<?php the_title(); ?>&url=<?php the_permalink() ?>&via=mashwork" title="Share to Twitter">Twitter</a>
+							<a rel="nofollow" target="_blank" href="http://twitter.com/share?text=<?php the_title(); ?>&url=<?php the_permalink() ?>&via=mashwork" title="Share to Twitter"></a>
 						</li>
 						<li class="facebook-share-link">
-							<a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" title="Share to Facebook">Facebook</a>
+							<a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" title="Share to Facebook"></a>
 						</li>
 						<li class="linkedin-share-link">
-							<a rel="nofollow" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&summary=&source=<?php get_home_url(); ?>" title="Share to LinkedIn">LinkedIn</a>
+							<a rel="nofollow" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&summary=&source=<?php get_home_url(); ?>" title="Share to LinkedIn"></a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="entry">
 					<?php the_content(); ?>
+				</div>
+
+				<div class="tags-wrap">
+					<h4>Tags</h4>
+					<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
 				</div>
 			</div>
 

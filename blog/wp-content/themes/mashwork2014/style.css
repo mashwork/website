@@ -4876,7 +4876,7 @@ button.close {
 .clearfix:after, section:after, .section:after, .section-header-wrap:after, .page-footer:after {
   clear: both; }
 
-.center-block, h1.section-header, .branding-wrap, .blog-title {
+.center-block, .branding-wrap, .blog-title {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -5109,11 +5109,12 @@ a {
     cursor: pointer; }
 
 p {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 24px;
-  line-height: 2.4rem;
-  font-weight: 300; }
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 20px; }
 
 b, strong {
   font-weight: 400; }
@@ -5143,6 +5144,14 @@ h2 {
   font-size: 2.8rem;
   line-height: 34px;
   line-height: 3.4rem; }
+
+h3 {
+  font-family: "jaf-bernino-sans-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 30px;
+  line-height: 3rem; }
 
 .post-title {
   font-family: "adelle", Georgia, "Times New Roman", Times, serif; }
@@ -5175,32 +5184,6 @@ h2 {
   @media screen and (min-width: 1200px) {
     .blog-description {
       margin: 0 80px; } }
-
-h1.section-header {
-  padding: 0 15px;
-  margin-bottom: 20px;
-  color: #4b4b4b;
-  letter-spacing: .5px; }
-
-h3 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 21px;
-  line-height: 2.1rem; }
-
-p {
-  margin-bottom: 15px; }
-
-p.section-description {
-  color: #9d854f;
-  font-size: 21px;
-  font-size: 2.1rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 0; }
-  @media screen and (max-width: 479px) {
-    p.section-description {
-      font-size: 18px;
-      font-size: 1.8rem; } }
 
 .btn-teal, .action-btn {
   display: inline-block;
@@ -5456,7 +5439,7 @@ section, .section {
     vertical-align: middle;
     position: relative; }
   .branding-wrap .mashwork-logo-link {
-    top: -5px; }
+    top: -4px; }
   .branding-wrap .mashwork-logo {
     width: 185px; }
   .branding-wrap .canvs-logo {
@@ -5554,6 +5537,7 @@ section, .section {
     .post .post-details a {
       font-weight: 400; }
   .post .entry {
+    margin-top: 20px;
     margin-bottom: 20px; }
   .post .read-more-btn {
     width: 120px;
@@ -5565,7 +5549,7 @@ section, .section {
 
 .single-post-content {
   padding: 0 15px;
-  padding-top: 40px;
+  padding-top: 70px;
   width: 800px;
   max-width: 100%;
   display: block;
@@ -5589,6 +5573,9 @@ section, .section {
   max-width: 100%;
   height: auto; }
 
+.share-links-wrap {
+  margin-bottom: 40px; }
+
 .share-links-list {
   list-style: none;
   text-align: center; }
@@ -5600,7 +5587,45 @@ section, .section {
       width: 30px;
       height: 30px;
       background-color: #777777;
-      color: white; }
+      color: white;
+      -webkit-background-size: 20px 20px;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+      .share-links-list li a:hover {
+        background-color: #9d854f; }
+  .share-links-list .twitter-share-link a {
+    background-image: url(/wp-content/themes/mashwork2014/images/twitter-icon.svg); }
+  .share-links-list .facebook-share-link a {
+    background-image: url(/wp-content/themes/mashwork2014/images/facebook-icon.svg); }
+  .share-links-list .linkedin-share-link a {
+    background-image: url(/wp-content/themes/mashwork2014/images/linkedin-icon.svg); }
+
+.tags-wrap {
+  text-align: center; }
+  .tags-wrap h4 {
+    margin-bottom: 20px; }
+  .tags-wrap ul {
+    list-style: none;
+    padding: 0;
+    vertical-align: top; }
+  .tags-wrap li {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top; }
+  .tags-wrap a {
+    padding: 3px 10px;
+    background-color: gainsboro;
+    color: #777777; }
+    .tags-wrap a:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #9d854f; }
+
+.post-list-pages {
+  text-align: center; }
+  .post-list-pages .wp-pagenavi {
+    display: inline-block; }
 
 .page-footer {
   background-color: #282828;
@@ -5681,5 +5706,17 @@ section, .section {
     font-size: 21px;
     font-size: 2.1rem;
     line-height: 1; }
+
+.archive-header-wrap {
+  margin-bottom: 50px; }
+  .archive-header-wrap .archive-title {
+    font-size: 32px;
+    font-size: 3.2rem;
+    font-weight: 300; }
+
+.header-callout {
+  color: #9d854f;
+  text-transform: capitalize;
+  font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

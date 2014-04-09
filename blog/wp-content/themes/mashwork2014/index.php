@@ -13,7 +13,7 @@
 
 <head>
 
-<title>Blog - Mashwork</title>
+<title>MashWords – The Mashwork & Canvs Blog</title>
 
 <?php get_header(); ?>
 
@@ -54,9 +54,12 @@
 					</div>
 
 				<?php endwhile; ?>
-
-			<?php endif; ?>
 			</div>
+			<div class="post-list-pages">
+				<?php wp_pagenavi(); ?>
+			</div>
+			<?php endif; ?>
+			
 		</div>
 	</div>
 </div>

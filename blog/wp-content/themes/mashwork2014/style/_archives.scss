@@ -1,0 +1,13 @@
+.archive-header-wrap {
+	margin-bottom: 50px;
+	.archive-title {
+		@include rem('font-size', 32px);
+		font-weight: 300;
+	}
+}
+
+.header-callout {
+	color: $gold;
+	text-transform: capitalize;
+	font-weight: 400;
+}

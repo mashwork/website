@@ -48,7 +48,7 @@ section, .section {
     position: relative;
   }
   .mashwork-logo-link {
-    top: -5px;
+    top: -4px;
   }
   .mashwork-logo {
     width: 185px;
@@ -135,6 +135,7 @@ section, .section {
     }
   }
   .entry {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   .read-more-btn {
@@ -147,7 +148,7 @@ section, .section {
 
 .single-post-content {
   padding: 0 15px;
-  padding-top: 40px;
+  padding-top: 70px;
   width: 800px;
   max-width: 100%;
   @include center-block;
@@ -179,6 +180,10 @@ section, .section {
 
 //SHARE LINKS
 
+.share-links-wrap {
+  margin-bottom: 40px;
+}
+
 .share-links-list {
   list-style: none;
   text-align: center;
@@ -190,7 +195,66 @@ section, .section {
       @include size(30px);
       background-color: $grayMed;
       color: white;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      &:hover {
+        background-color: $gold;
+      }
     }
+  }
+  .twitter-share-link {
+    a {
+      background-image: url(/wp-content/themes/mashwork2014/images/twitter-icon.svg);
+    }
+  }
+  .facebook-share-link {
+    a {
+      background-image: url(/wp-content/themes/mashwork2014/images/facebook-icon.svg);
+    }
+  }
+  .linkedin-share-link {
+    a {
+      background-image: url(/wp-content/themes/mashwork2014/images/linkedin-icon.svg);
+    }
+  }
+}
+
+//TAG LIST
+
+.tags-wrap {
+  text-align: center;
+  h4 {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    vertical-align: top;
+  }
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+  a {
+    padding: 3px 10px;
+    background-color: $grayLight;
+    color: $grayMed;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: $gold;
+    }
+  }
+}
+
+//PAGE NAVIGATION
+
+.post-list-pages {
+  text-align: center;
+  .wp-pagenavi {
+    display: inline-block;
   }
 }
 

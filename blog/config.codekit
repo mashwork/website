@@ -5277,6 +5277,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/wp-content\/themes\/mashwork2014\/style\/_archives.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/style\/_archives.scss",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/mashwork2014\/_archives.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/wp-content\/themes\/mashwork2014\/style\/_buttons.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,

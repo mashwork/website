@@ -22,9 +22,10 @@ a {
 }
 
 p {
-  @include rem('font-size', 18px);
-  @include rem('line-height', 24px);
+  @include rem('font-size', 21px);
+  @include rem('line-height', 32px);
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 b, strong {
@@ -47,11 +48,18 @@ h1 {
   }
 }
 
-h2     {
+h2 {
   font-family: $headerFontFamily;
   font-weight: 400;
   @include rem('font-size', 28px);
   @include rem('line-height', 34px);
+}
+
+h3 {
+  font-family: $headerFontFamily;
+  font-weight: 400;
+  @include rem('font-size', 24px);
+  @include rem('line-height', 30px);
 }
 
 .post-title {
@@ -86,32 +94,5 @@ h2     {
   }
   @include min-width($screen-lg) {
     margin: 0 80px;
-  }
-}
-
-h1.section-header {
-  padding: 0 15px;
-  margin-bottom: 20px;
-  color: $grayDark;
-  @extend .center-block;
-  letter-spacing: .5px;
-}
-
-h3 {
-  @include rem('font-size', 18px);
-  @include rem('line-height', 21px);
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-p.section-description {
-  color: $gold;
-  @include rem('font-size', 21px);
-  letter-spacing: 0.5px;
-  margin-bottom: 0;
-  @include max-width($screen-xs) {
-    @include rem('font-size', 18px);
   }
 }

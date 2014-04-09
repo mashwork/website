@@ -1,76 +1,80 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Mashwork
+ * @subpackage Mashwork2014
  */
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="" />
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js", lang="en"> <!--<![endif]-->
 
-<title> Blog - Mashwork</title>
+<head>
+
+<title>MashWords – The Mashwork & Canvs Blog</title>
 
 <?php get_header(); ?>
 
-	<div id="content" class="span-24 last">
-	<div id="TitleBox" class="span-24"><h1 class="pageTitle">Blog</h1></div>	
-	<div id="titledivBox" class="span-24"></div><!-- divider -->
+<div class="container">
+
+	<div class="row">
 	
-      
-
-<!-- Start Row 1 -->
-<div id="leftMain" class="span-16">
+		<div class="blog-content">
 	
-    <div class="span-16 last">
-
-<!-- Start Loop -->
-
-
-		<?php if (have_posts()) : ?>
-<div style="margin-bottom:25px;">
- 	  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
- 	  <?php /* If this is a category archive */ if (is_category()) { ?>
-		<h3 class="ArchiveTitle">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h3>
- 	  <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-		<h3 class="ArchiveTitle">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h3>
- 	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-		<h3 class="ArchiveTitle">Archive for <?php the_time('F jS, Y'); ?></h3>
- 	  <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h3 class="ArchiveTitle">Archive for <?php the_time('F, Y'); ?></h3>
- 	  <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-		<h3 class="ArchiveTitle">Archive for <?php the_time('Y'); ?></h3>
-	  <?php /* If this is an author archive */ } elseif (is_author()) { ?>
-		<h3 class="ArchiveTitle">Author Archive</h3>
- 	  <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-		<h3 class="ArchiveTitle">Blog Archives</h3>
- 	  <?php } ?>
-</div>
-
-		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-		</div>
-
-		<?php while (have_posts()) : the_post(); ?>
-		<div <?php post_class() ?>>
-				<h3 id="post-<?php the_ID(); ?>"><a style="color:#343436;" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<small><?php the_time('l, F jS, Y') ?></small>
-
-				<div class="entry">
-					<?php the_content() ?>
-				</div>
-
-				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p><hr>
-
+			<?php if (have_posts()) : ?>
+			<div class="archive-header-wrap">
+				<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+				<?php /* If this is a category archive */ if (is_category()) { ?>
+				<h3 class="archive-title"><span class="header-callout"><?php single_cat_title(); ?></span> Category Posts</h3>
+				<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+				<h3 class="archive-title">Posts Tagged <span class="header-callout"><?php single_tag_title(); ?></span></h3>
+				<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+				<h3 class="archive-title">Archive for <?php the_time('F jS, Y'); ?></h3>
+				<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+				<h3 class="archive-title">Archive for <?php the_time('F, Y'); ?></h3>
+				<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+				<h3 class="archive-title">Archive for <?php the_time('Y'); ?></h3>
+				<?php /* If this is an author archive */ } elseif (is_author()) { ?>
+				<h3 class="archive-title">Author Archive</h3>
+				<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+				<h3 class="archive-title">Blog Archives</h3>
+				<?php } ?>
 			</div>
 
-		<?php endwhile; ?>
+			<div class="post-list">
 
-		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-		</div>
+		<?php while (have_posts()) : the_post(); ?>
+
+				<div id="post-<?php the_ID(); ?>" <?php post_class() ?> >
+					<div class="row">
+						<div class="post-media">
+						<?php if ( has_post_thumbnail()) : ?>
+						<a href="<?php the_permalink(); ?>" class="thumbnail-link" title="<?php the_title_attribute(); ?>" >
+						<?php the_post_thumbnail('thumbnail'); ?>
+						</a>
+						<?php endif; ?>
+						</div>
+						<div class="post-listing">
+							<h2 class="post-title">
+								<a href="<?php the_permalink() ?>" class="post-title-link" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+							</h2>
+							<div class="post-details">
+								<span><?php the_time('F jS, Y') ?> by <?php the_author() ?> about <?php the_category(', ') ?></span>
+							</div>
+							<div class="entry">
+								<?php the_excerpt(); ?>
+							</div>
+							<a href="<?php the_permalink(); ?>" class="btn-gold read-more-btn" title="Read more">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<?php endwhile; ?>
+
+			<?php wp_pagenavi(); ?>
+
 	<?php else :
 
 		if ( is_category() ) { // If this is a category archive
@@ -88,22 +92,9 @@
 	endif;
 ?>
 
-	
-
-
-<!-- End Loop -->
-
-
-	</div>
-
-</div><!-- End Left Main --> 
-
-
+</div>
 </div> 
-        
-       
-
-	
-
+</div>  
+</div> 
 
 <?php get_footer(); ?>
