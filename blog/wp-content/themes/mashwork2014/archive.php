@@ -37,7 +37,7 @@
 				<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
 				<h3 class="archive-title">Archive for <?php the_time('Y'); ?></h3>
 				<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<h3 class="archive-title">Author Archive</h3>
+				<h3 class="archive-title"><span class="header-callout"><?php echo get_the_author() ; ?></span> Author Archive</h3>
 				<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h3 class="archive-title">Blog Archives</h3>
 				<?php } ?>
@@ -73,7 +73,9 @@
 
 				<?php endwhile; ?>
 
+			<div class="post-list-pages">
 			<?php wp_pagenavi(); ?>
+			</div>
 
 	<?php else :
 

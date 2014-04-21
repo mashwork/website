@@ -49,12 +49,21 @@ section, .section {
   }
   .mashwork-logo-link {
     top: -4px;
+    @include max-width($screen-xs) {
+      top: -2px;
+    }
   }
   .mashwork-logo {
     width: 185px;
+    @include max-width($screen-xs) {
+      width: 130px;
+    }
   }
   .canvs-logo {
     width: 120px;
+    @include max-width($screen-xs) {
+      width: 90px;
+    }
   }
   .brand-divider {
     color: white;
@@ -63,6 +72,10 @@ section, .section {
     font-family: $headerFontFamily;
     margin: 0 20px;
     @include font-smoothing;
+    @include max-width($screen-xs) {
+      font-size: 24px;
+      margin: 0 10px;
+    }
   }
 }
 
@@ -77,8 +90,8 @@ section, .section {
     @include rem('line-height', 64px);
   }
   @include max-width($screen-sm) {
-    @include rem('font-size', 32px);
-    @include rem('line-height', 36px);
+    @include rem('font-size', 36px);
+    @include rem('line-height', 42px);
   }
 }
 
@@ -110,9 +123,6 @@ section, .section {
       img {
         width: 100%;
         height: auto;
-        @include max-width($screen-sm) {
-          width: 80%;
-        }
       }
     }
   }
@@ -122,6 +132,9 @@ section, .section {
   .post-title {
     text-align: left;
     margin-bottom: 10px;
+    @include max-width($screen-sm) {
+      text-align: center;
+    }
   }
   .post-details {
     color: $gold;
@@ -133,6 +146,9 @@ section, .section {
     a {
       font-weight: 400;
     }
+    @include max-width($screen-sm) {
+      text-align: center;
+    }
   }
   .entry {
     margin-top: 20px;
@@ -141,6 +157,9 @@ section, .section {
   .read-more-btn {
     @include button-size(30px, 120px);
     @include rem('font-size', 16px);
+    @include max-width($screen-sm) {
+      @include center-block;
+    }
   }
 }
 
@@ -187,15 +206,16 @@ section, .section {
 .share-links-list {
   list-style: none;
   text-align: center;
+  padding: 0;
   li {
     display: inline-block;
     margin: 0 5px;
     a {
       display: block;
       @include size(30px);
-      background-color: $grayMed;
+      background-color: $gray;
       color: white;
-      background-size: 20px 20px;
+      background-size: 18px;
       background-repeat: no-repeat;
       background-position: center center;
       &:hover {
@@ -205,17 +225,17 @@ section, .section {
   }
   .twitter-share-link {
     a {
-      background-image: url(/wp-content/themes/mashwork2014/images/twitter-icon.svg);
+      background-image: url(/blog/wp-content/themes/mashwork2014/images/twitter-icon.svg);
     }
   }
   .facebook-share-link {
     a {
-      background-image: url(/wp-content/themes/mashwork2014/images/facebook-icon.svg);
+      background-image: url(/blog/wp-content/themes/mashwork2014/images/facebook-icon.svg);
     }
   }
   .linkedin-share-link {
     a {
-      background-image: url(/wp-content/themes/mashwork2014/images/linkedin-icon.svg);
+      background-image: url(/blog/wp-content/themes/mashwork2014/images/linkedin-icon.svg);
     }
   }
 }
@@ -253,8 +273,30 @@ section, .section {
 
 .post-list-pages {
   text-align: center;
+  margin-bottom: 60px;
   .wp-pagenavi {
     display: inline-block;
+    @include rem('font-size', 21px);
+    a.page {
+      background-color: $grayLight;
+      color: $grayMed;
+      &:hover {
+        background-color: darken($grayLight,5%);
+        color: $grayDark;
+      }
+    }
+    span.current {
+      background-color: $gold;
+      color: white;
+    }
+  }
+  .wp-pagenavi a, .wp-pagenavi span {
+    border: none;
+    margin: 0;
+    padding: 5px 10px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

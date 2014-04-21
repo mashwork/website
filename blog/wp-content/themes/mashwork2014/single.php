@@ -21,7 +21,7 @@
 				<h1 class="post-title"><?php the_title(); ?></h1>
 
 				<div class="post-details">
-					<span><?php the_time('F jS, Y') ?>  by <?php the_author() ?> about <?php the_category(', ') ?></span>
+					<span><?php the_time('F jS, Y') ?>  by <?php the_author_posts_link() ?> about <?php the_category(', ') ?></span>
 				</div>
 
 				<div class="share-links-wrap">

@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon-precomposed" href="http://www.mashwork.com/apple-touch-icon-precomposed.png">
 
   <!--[if IE]><link rel="stylesheet" href="ie.css" type="text/css" media="screen, projection" /><![endif]-->  
-  <link rel="stylesheet" href="/wp-content/themes/mashwork2014/style.css" type="text/css">
+  <link rel="stylesheet" href="/blog/wp-content/themes/mashwork2014/style.css" type="text/css">
 
   <script type="text/javascript" src="//use.typekit.net/nxm7llc.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -30,8 +30,8 @@
 
 <header class="blog-hero-header">
   <div class="container">
-    <div class="branding-wrap"><a href="http://mashwork.com" class="mashwork-logo-link"><img src="/wp-content/themes/mashwork2014/images/logos/mashwork-logo-white-red.svg" class="mashwork-logo"/></a><span class="brand-divider">/</span><a href="http://canvs.tv" class="canvs-logo-link"><img src="/wp-content/themes/mashwork2014/images/logos/canvs-logo-white.svg" class="canvs-logo"/></a></div>
-    <h1 class="blog-title"><a href="http://mashwork.com/blog">MashWords</a></h1>
+    <div class="branding-wrap"><a href="/" class="mashwork-logo-link"><img src="/blog/wp-content/themes/mashwork2014/images/logos/mashwork-logo-white-red.svg" class="mashwork-logo"/></a><span class="brand-divider">/</span><a href="http://canvs.tv/login" class="canvs-logo-link"><img src="/blog/wp-content/themes/mashwork2014/images/logos/canvs-logo-white.svg" class="canvs-logo"/></a></div>
+    <h1 class="blog-title"><a href="/blog">MashWords</a></h1>
     <p class="blog-description">Product updates and social media insights.</p>
   </div>
 </header>

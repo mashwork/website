@@ -1,8 +1,9 @@
 @import "variables";
 
-@import "../bower_components/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
+@import "../../../../../bower_components/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
 @import "bourbon";
 
+@import "../../../../../bower_components/sass_mixin_rem/stylesheets/_rem.scss";
 @import "mixins";
 @import "animations";
 @import "typography";
