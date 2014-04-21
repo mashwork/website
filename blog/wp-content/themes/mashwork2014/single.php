@@ -21,7 +21,7 @@
 				<h1 class="post-title"><?php the_title(); ?></h1>
 
 				<div class="post-details">
-					<span><?php the_time('F jS, Y') ?>  by <?php the_author_posts_link() ?> about <?php the_category(', ') ?></span>
+					<span><?php the_time('F j, Y') ?>  by <?php the_author_posts_link() ?> about <?php the_category(', ') ?></span>
 				</div>
 
 				<div class="share-links-wrap">
@@ -51,6 +51,10 @@
 			<div class="post-navigation">
 				<div class="previous-post-btn"><?php previous_post_link('%link', 'Previous Post') ?></div>
 				<div class="next-post-btn"><?php next_post_link('%link', 'Next Post') ?></div>
+			</div>
+
+			<div class="comments-wrap">
+				<?php comments_template(); ?>
 			</div>
 	
 		<?php endwhile; else: ?>

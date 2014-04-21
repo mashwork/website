@@ -36,6 +36,9 @@ section, .section {
   background: $offBlack url("../mashwork2014/images/blog-header-image.jpg") no-repeat top center;
   background-attachment: fixed;
   background-size: cover 340px;
+  @include max-width($screen-xs) {
+    height: 240px;
+  }
 }
 
 .branding-wrap {
@@ -172,12 +175,22 @@ section, .section {
   max-width: 100%;
   @include center-block;
   .post {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 
 .post-navigation {
-  margin-bottom: 30px;
+  @include clearfix;
+  margin-bottom: 60px;
+  div {
+    display: inline-block;
+  }
+  .previous-post-btn {
+    float: left;
+  }
+  .next-post-btn {
+    float: right;
+  }
   a {
     @include rem('font-size', 18px);
   }
@@ -194,6 +207,10 @@ section, .section {
   .entry img {
     max-width: 100%;
     height: auto;
+    &.alignnone {
+      display: block;
+      @include center-block;
+    }
   }
 }
 
@@ -255,12 +272,16 @@ section, .section {
   li {
     display: inline-block;
     margin-right: 5px;
+    margin-bottom: 5px;
     vertical-align: top;
   }
   a {
-    padding: 3px 10px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
     background-color: $grayLight;
     color: $grayMed;
+    display: inline-block;
     &:hover {
       text-decoration: none;
       color: white;
@@ -276,6 +297,7 @@ section, .section {
   margin-bottom: 60px;
   .wp-pagenavi {
     display: inline-block;
+    max-width: 100%;
     @include rem('font-size', 21px);
     a.page {
       background-color: $grayLight;
@@ -291,6 +313,7 @@ section, .section {
     }
   }
   .wp-pagenavi a, .wp-pagenavi span {
+    display: inline-block;
     border: none;
     margin: 0;
     padding: 5px 10px;
@@ -298,6 +321,12 @@ section, .section {
       text-decoration: none;
     }
   }
+}
+
+//COMMENTS
+
+.comments-wrap {
+  margin-bottom: 60px;
 }
 
 //BLOG FOOTER
