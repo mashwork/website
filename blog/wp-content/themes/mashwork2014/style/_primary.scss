@@ -26,6 +26,10 @@ section, .section {
   margin-bottom: 30px;
 }
 
+hr {
+  border-top: 1px solid $grayLight;
+}
+
 //BLOG HEADER
 
 .blog-hero-header {
@@ -112,20 +116,25 @@ section, .section {
 }
 
 .post {
-  margin-bottom: 80px;
+  padding: 40px 0;
   .post-media {
     @include make-sm-column(4);
+    @include max-width($screen-sm) {
+      padding: 0;
+      max-height: 200px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
     .thumbnail-link {
       width: 100%;
       text-align: center;
       @include max-width($screen-sm) {
         margin: 0 auto;
         display: block;
-        margin-bottom: 30px;
       }
       img {
         width: 100%;
-        height: auto;
+        height: auto !important;
       }
     }
   }
@@ -134,6 +143,7 @@ section, .section {
   }
   .post-title {
     text-align: left;
+    padding: 0 15px;
     margin-bottom: 10px;
     @include max-width($screen-sm) {
       text-align: center;
@@ -141,6 +151,7 @@ section, .section {
   }
   .post-details {
     color: $gold;
+    padding: 0 15px;
     margin-bottom: 20px;
     font-style: italic;
     font-weight: 300;
@@ -153,35 +164,76 @@ section, .section {
       text-align: center;
     }
   }
-  .entry {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   .read-more-btn {
     @include button-size(30px, 120px);
     @include rem('font-size', 16px);
     @include max-width($screen-sm) {
       @include center-block;
     }
+    &:hover {
+      background-color: $gold;
+    }
+    &:active {
+      box-shadow: inset 0 2px 2px shade($gold, 25%);
+    }
+  }
+  @include max-width($screen-sm) {
+    border-bottom: 1px solid $gray;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.entry {
+  margin-top: 20px 0;
+  padding: 0 15px;
+  position: relative;
+}
+
+.post-listing {
+  .entry {
+    padding: 0;
+  }
+  .post-title, .post-details {
+    padding: 0;
+  }
+}
+
+.entry > p {
+  padding: 0;
+}
+
+.entry > a, .entry > .wp-caption > a {
+  margin: 0 -15px;
+  display: block;
+}
+
+.entry .wp-caption {
+  width: auto !important;
+  img {
+    margin-bottom: 10px;
+  }
+  .wp-caption-text {
+    text-align: center;
+    font-style: italic;
   }
 }
 
 //SINGLE POST
 
 .single-post-content {
-  padding: 0 15px;
-  padding-top: 70px;
+  padding: 0;
   width: 800px;
   max-width: 100%;
   @include center-block;
-  .post {
-    margin-bottom: 60px;
-  }
 }
 
 .post-navigation {
   @include clearfix;
   margin-bottom: 60px;
+  margin-top: 30px;
+  padding: 0 5px;
   div {
     display: inline-block;
   }
@@ -208,8 +260,35 @@ section, .section {
     max-width: 100%;
     height: auto;
     &.alignnone {
-      display: block;
       @include center-block;
+    }
+  }
+}
+
+blockquote {
+  border-left: 5px solid $mashRed;
+  position: relative;
+  padding: 5px;
+  &:before {
+    display: inline-block;
+    content: url(/img/icon-quote.svg);
+    @include size(30px);
+    color: $mashRed;
+    position: absolute;
+    left: -60px;
+    margin-top: -15px;
+    top: 50%;
+  }
+  @include max-width($screen-sm) {
+    border: none;
+    text-align: center;
+    &:before {
+      display: inline-block;
+      position: relative;
+      left: initial;
+      top: initial;
+      margin: 0;
+      margin-bottom: 15px;
     }
   }
 }
@@ -261,6 +340,7 @@ section, .section {
 
 .tags-wrap {
   text-align: center;
+  padding-top: 20px;
   h4 {
     margin-bottom: 20px;
   }
@@ -294,7 +374,9 @@ section, .section {
 
 .post-list-pages {
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 60px;
+  padding: 0 5px;
   .wp-pagenavi {
     display: inline-block;
     max-width: 100%;
@@ -310,6 +392,9 @@ section, .section {
     span.current {
       background-color: $gold;
       color: white;
+    }
+    @include max-width($screen-sm) {
+      @include rem('font-size', 16px);
     }
   }
   .wp-pagenavi a, .wp-pagenavi span {

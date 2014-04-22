@@ -1,8 +1,12 @@
 .archive-header-wrap {
 	margin-bottom: 50px;
 	.archive-title {
-		@include rem('font-size', 32px);
+		@include rem('font-size', 28px);
 		font-weight: 300;
+		@include max-width($screen-xs) {
+	    @include rem('font-size', 24px);
+	    @include rem('line-height', 28px);
+	  }
 	}
 }
 

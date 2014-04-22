@@ -22,13 +22,13 @@ a {
 }
 
 p {
-  @include rem('font-size', 21px);
-  @include rem('line-height', 32px);
+  @include rem('font-size', 18px);
+  @include rem('line-height', 28px);
   font-weight: 300;
   margin-bottom: 20px;
   @include max-width($screen-xs) {
-    @include rem('font-size', 18px);
-    @include rem('line-height', 24px);
+    @include rem('font-size', 16px);
+    @include rem('line-height', 21px);
   }
 }
 
@@ -39,6 +39,7 @@ b, strong {
 h1,h2,h3,h4 {
   text-align: center;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -55,8 +56,13 @@ h1 {
 h2 {
   font-family: $headerFontFamily;
   font-weight: 400;
+  margin-top: 20px;
   @include rem('font-size', 28px);
   @include rem('line-height', 34px);
+  @include max-width($screen-xs) {
+    @include rem('font-size', 24px);
+    @include rem('line-height', 28px);
+  }
 }
 
 h3 {
@@ -67,6 +73,7 @@ h3 {
 }
 
 .post-title {
+  margin-top: 0;
   font-family: $slabFontFamily;
   .post-title-link {
     color: $grayDark;
@@ -98,5 +105,25 @@ h3 {
   }
   @include min-width($screen-lg) {
     margin: 0 80px;
+  }
+}
+
+.wp-caption-text {
+  @include rem('font-size', 18px);
+  @include max-width($screen-xs) {
+    @include rem('font-size', 16px);
+  }
+}
+
+blockquote {
+  p {
+    @include rem('font-size', 21px);
+    @include rem('line-height', 28px);
+    font-style: italic;
+    font-weight: 400;
+    @include max-width($screen-xs) {
+      @include rem('font-size', 18px);
+      @include rem('line-height', 24px);
+    }
   }
 }

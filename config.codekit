@@ -856,33 +856,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/archives.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/archives.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/comments-popup.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/comments-popup.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/comments.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/comments.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/blog\/wp-content\/themes\/mashwork2014\/footer.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -928,15 +901,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/image.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/image.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/blog\/wp-content\/themes\/mashwork2014\/images\/blog-header-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -953,15 +917,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/index.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/links.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/links.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1013,6 +968,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/blog\/wp-content\/themes\/mashwork2014\/partials\/header-content.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/partials\/header-content.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/blog\/wp-content\/themes\/mashwork2014\/partials\/header-content.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -1029,15 +993,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/profile.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/search.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/search.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2261,6 +2216,28 @@
 		"initialSize": 969658,
 		"inputAbbreviatedPath": "\/blog\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final.png",
 		"outputAbbreviatedPath": "\/blog\/wp-content\/uploads\/2014\/04\/Mashstats_Snapchat_Final.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/blog\/wp-content\/uploads\/2014\/04\/relaxed_biking-450x450.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48989,
+		"inputAbbreviatedPath": "\/blog\/wp-content\/uploads\/2014\/04\/relaxed_biking-450x450.jpeg",
+		"outputAbbreviatedPath": "\/blog\/wp-content\/uploads\/2014\/04\/relaxed_biking-450x450.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/blog\/wp-content\/uploads\/2014\/04\/relaxed_biking.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 230058,
+		"inputAbbreviatedPath": "\/blog\/wp-content\/uploads\/2014\/04\/relaxed_biking.jpeg",
+		"outputAbbreviatedPath": "\/blog\/wp-content\/uploads\/2014\/04\/relaxed_biking.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

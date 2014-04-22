@@ -48,7 +48,7 @@
 								<div class="entry">
 									<?php the_excerpt(); ?>
 								</div>
-								<a href="<?php the_permalink(); ?>" class="btn-gold read-more-btn" title="Read more">Read more</a>
+								<a href="<?php the_permalink(); ?>" class="btn-gray read-more-btn" title="Read more">Read more</a>
 							</div>
 						</div>
 					</div>
