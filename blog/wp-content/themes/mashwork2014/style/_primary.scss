@@ -119,10 +119,11 @@ hr {
   padding: 40px 0;
   .post-media {
     @include make-sm-column(4);
+    max-height: 300px;
+    overflow: hidden;
     @include max-width($screen-sm) {
       padding: 0;
       max-height: 200px;
-      overflow: hidden;
       margin-bottom: 30px;
     }
     .thumbnail-link {

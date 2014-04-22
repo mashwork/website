@@ -2063,9 +2063,9 @@ hr { border-top: 1px solid gainsboro; }
 @media (min-width: 1200px) { .blog-content { margin-left: 8.3333333333%; } }
 
 .post { padding: 40px 0; }
-.post .post-media { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
+.post .post-media { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; max-height: 300px; overflow: hidden; }
 @media (min-width: 768px) { .post .post-media { float: left; width: 33.3333333333%; } }
-@media screen and (max-width: 767px) { .post .post-media { padding: 0; max-height: 200px; overflow: hidden; margin-bottom: 30px; } }
+@media screen and (max-width: 767px) { .post .post-media { padding: 0; max-height: 200px; margin-bottom: 30px; } }
 .post .post-media .thumbnail-link { width: 100%; text-align: center; }
 @media screen and (max-width: 767px) { .post .post-media .thumbnail-link { margin: 0 auto; display: block; } }
 .post .post-media .thumbnail-link img { width: 100%; height: auto !important; }
