@@ -118,20 +118,6 @@
 		margin-bottom: 40px;
 	}
 
-	.canvs-popup {
-		height: 560px;
-		h1 {
-			font-size: 28px;
-		}
-		.popup-image {
-			height: 140px;
-			margin-bottom: 25px;
-		}
-		.popup-message {
-			font-size: 18px;
-		}
-	}
-
 	@clientLogoBoxHeight: 150px;
 
 	.client-logo-box {
@@ -366,13 +352,6 @@
 
 	.hero-button-container {
 		width: @heroButtonWidth;
-	}
-
-	.canvs-popup {
-		top: 60px;
-		&.closed {
-			right: -100%;
-		}
 	}
 
 	@clientLogoBoxHeight: 130px;
@@ -653,6 +632,12 @@
 		line-height: 60px;
 	}
 
+	.canvs-popup {
+		.canvs-logo {
+			max-width: 60%;
+		}
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -771,27 +756,7 @@
 	}
 
 	.canvs-popup {
-		width: 100%;
-		height: 100%;
-		top: 0;
-		position: fixed;
-		z-index: 9999;
-		background-color: rgba(0,20,17,.95);
-		&.closed {
-			right: -100%;
-		}
-		h1 {
-			font-size: 28px;
-			margin-bottom: 5%;
-		}
-		.popup-image {
-			width: 40%;
-			height: auto;
-			margin-bottom: 25px;
-		}
-		.popup-message {
-			font-size: 16px;
-		}
+	
 	}
 
 	@clientLogoBoxHeight: 115px;
@@ -839,7 +804,13 @@
 		height: @heroButtonHeight;
 		line-height: @heroButtonHeight;
 	}
-	
+
+	.canvs-popup {
+		.canvs-logo {
+			max-width: 60%;
+		}
+	}
+
 }
    
 @media (max-width: 480px) {
@@ -1195,10 +1166,24 @@
 		height: 22px;
 		width: auto;
 	}
-}
 
-@media (max-height: 320px) {
-	.popup-image {
-		display: none;
+	.canvs-popup {
+		.introducing-text {
+			font-size: 21px;
+		}
+		.canvs-logo {
+			max-width: 80%;
+		}
+		.powered-by {
+			font-size: 18px;
+		}
+		.powered-by-logo {
+			width: 140px;
+			top: -2px;
+		}
+		.popup-content {
+			margin-top: -150px;
+		}
 	}
+
 }

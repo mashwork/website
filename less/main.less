@@ -217,7 +217,7 @@ h1 {
 		right: -100%;
 	}
 	h1 {
-		color: lighten(@teal, 20%);
+		color: @teal;
 		font-size: 36px;
 		font-weight: 400;
 		line-height: 1.15;
@@ -274,26 +274,23 @@ h1 {
 		top: -6px;
 	}
 	.popup-message {
-		font-size: 28px;
+		font-size: 36px;
 		font-weight: 400;
-		color: lighten(@teal, 15%);
+		color: @teal;
 		padding: 0 20px;
 		margin: 0;
-		margin-top: 11px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		font-family: @headerFontFamily;
 	}
 	.canvs-site-btn {
-		position: absolute;
-		bottom: 30px;
-		left: 50%;
-		margin-left: -130px;
+		position: relative;
 		width: 260px;
 		padding: 10px 20px;
 		background-color: @tealDark;
 		color: white;
 		text-decoration: none;
 		font-size: 21px;
+		display: inline-block;
 		&:hover {
 			background-color: @teal;
 		}
