@@ -32,7 +32,7 @@
   <div class="container">
     <div class="branding-wrap"><a href="/" class="mashwork-logo-link"><img src="/blog/wp-content/themes/mashwork2014/images/logos/mashwork-logo-white-red.svg" class="mashwork-logo"/></a><span class="brand-divider">/</span><a href="http://canvs.tv/login" target="_blank" class="canvs-logo-link"><img src="/blog/wp-content/themes/mashwork2014/images/logos/canvs-logo-white.svg" class="canvs-logo"/></a></div>
     <h1 class="blog-title"><a href="/blog">MashWords</a></h1>
-    <p class="blog-description">Product updates and social media insights.</p>
+    <p class="blog-description">Product updates and social media insights.</p><a href="http://canvs.tv" target="_blank" class="canvs-site-link">Learn about Canvs</a>
   </div>
 </header>
 

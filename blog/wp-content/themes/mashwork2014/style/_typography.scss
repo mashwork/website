@@ -70,6 +70,33 @@ h3 {
   font-weight: 400;
   @include rem('font-size', 24px);
   @include rem('line-height', 30px);
+  @include max-width($screen-xs) {
+    @include rem('font-size', 21px);
+    @include rem('line-height', 25px);
+  }
+}
+
+h4 {
+  font-weight: 600;
+  @include rem('font-size', 21px);
+  @include rem('line-height', 25px);
+  @include max-width($screen-xs) {
+    @include rem('font-size', 18px);
+    @include rem('line-height', 21px);
+  }
+}
+
+.entry h4 {
+  text-align: left;
+}
+
+.entry {
+  h3 {
+    color: $mashRed;
+  }
+  a {
+    color: $mashRed;
+  }
 }
 
 .post-title {

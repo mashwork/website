@@ -968,15 +968,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/blog\/wp-content\/themes\/mashwork2014\/partials\/header-content.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/blog\/wp-content\/themes\/mashwork2014\/partials\/header-content.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/blog\/wp-content\/themes\/mashwork2014\/partials\/header-content.jade": {
 		"compileDebug": 1,
 		"fileType": 512,

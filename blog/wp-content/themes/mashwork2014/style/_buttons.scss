@@ -27,7 +27,7 @@
 	}
 }
 
-@mixin button-size($height: 45px, $width: 240px) {
+@mixin button-size($height: 40px, $width: 240px) {
 	width: $width;
 	height: $height;
 	@include rem('line-height',$height);
