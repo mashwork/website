@@ -15,6 +15,7 @@ body {
 
 a {
   color: $gold;
+  font-weight: 400;
   &:hover {
     color: shade($gold, .5);
     cursor: pointer;

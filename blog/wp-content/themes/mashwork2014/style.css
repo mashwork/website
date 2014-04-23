@@ -1939,7 +1939,7 @@ html { font-size: 62.5%; /* Sets up the Base 10 stuff */ }
 
 body { font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-size: 1.6rem; color: #4b4b4b; }
 
-a { color: #9d854f; }
+a { color: #9d854f; font-weight: 400; }
 a:hover { color: #9c844e; cursor: pointer; }
 
 p { font-size: 18px; font-size: 1.8rem; line-height: 28px; line-height: 2.8rem; font-weight: 300; margin-bottom: 20px; }
@@ -2118,6 +2118,7 @@ hr { border-top: 1px solid gainsboro; }
 
 .single-post .post-title { text-align: center; margin-bottom: 20px; }
 .single-post .post-details { text-align: center; }
+.single-post .post-details a { padding: 0 2px; }
 .single-post .entry img { max-width: 100%; height: auto; }
 .single-post .entry img.alignnone { display: block; margin-left: auto; margin-right: auto; }
 
