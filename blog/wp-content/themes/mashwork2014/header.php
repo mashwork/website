@@ -7,8 +7,6 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for mashwork.com/blog" href="?feed=rss" />
 
-  <? wp_head(); ?>
-
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
           
   <link rel="shortcut icon" href="http://www.mashwork.com/favicon.ico"/>
@@ -24,8 +22,10 @@
   <script type="text/javascript" src="//use.typekit.net/nxm7llc.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+  <? wp_head(); ?>
+
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 
 
 <header class="blog-hero-header">
