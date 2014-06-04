@@ -97,6 +97,10 @@ h4 {
   }
   a {
     color: $mashRed;
+    &:hover {
+      text-decoration: none;
+      background-color: transparentize($mashRed,.25);
+    }
   }
 }
 

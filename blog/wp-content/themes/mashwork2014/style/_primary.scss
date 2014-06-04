@@ -208,13 +208,15 @@ hr {
   padding: 0;
 }
 
-.entry > a, .entry > .wp-caption > a {
+.entry > .wp-caption > a {
   margin: 0 -15px;
-  display: block;
+  display: inline-block;
+  text-align: center;
 }
 
 .entry .wp-caption {
   width: auto !important;
+  text-align: center;
   img {
     margin-bottom: 10px;
   }
@@ -222,6 +224,10 @@ hr {
     text-align: center;
     font-style: italic;
   }
+}
+
+.entry a > img {
+  margin-bottom: 20px;
 }
 
 //SINGLE POST
