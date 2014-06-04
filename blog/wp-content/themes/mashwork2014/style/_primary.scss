@@ -106,7 +106,7 @@ hr {
 }
 
 .canvs-site-link {
-  @extend .btn-teal;
+  @extend .btn-teal-hollow;
   width: auto;
 }
 
@@ -176,6 +176,7 @@ hr {
     }
     &:hover {
       background-color: $gold;
+      color: $white;
     }
     &:active {
       box-shadow: inset 0 2px 2px shade($gold, 25%);
@@ -208,7 +209,7 @@ hr {
   padding: 0;
 }
 
-.entry > .wp-caption > a {
+.entry > .wp-caption > a, .entry a.img {
   margin: 0 -15px;
   display: inline-block;
   text-align: center;
@@ -218,7 +219,7 @@ hr {
   width: auto !important;
   text-align: center;
   img {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .wp-caption-text {
     text-align: center;
@@ -228,6 +229,12 @@ hr {
 
 .entry a > img {
   margin-bottom: 20px;
+}
+
+a.img {
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 //SINGLE POST
@@ -282,6 +289,7 @@ blockquote {
   border-left: 5px solid $mashRed;
   position: relative;
   padding: 10px 20px;
+  margin: 50px 0;
   &:before {
     display: inline-block;
     content: url(/img/icon-quote.svg);
@@ -322,8 +330,9 @@ blockquote {
     margin: 0 5px;
     a {
       display: block;
-      @include size(30px);
-      background-color: $gray;
+      @include size(40px);
+      border-radius: 100%;
+      background-color: $grayLighter;
       color: white;
       background-size: 18px;
       background-repeat: no-repeat;
@@ -335,17 +344,26 @@ blockquote {
   }
   .twitter-share-link {
     a {
-      background-image: url(/blog/wp-content/themes/mashwork2014/images/twitter-icon.svg);
+      background-image: url(/blog/wp-content/themes/mashwork2014/images/twitter-icon-dark.svg);
+      &:hover {
+        background-image: url(/blog/wp-content/themes/mashwork2014/images/twitter-icon.svg);
+      }
     }
   }
   .facebook-share-link {
     a {
-      background-image: url(/blog/wp-content/themes/mashwork2014/images/facebook-icon.svg);
+      background-image: url(/blog/wp-content/themes/mashwork2014/images/facebook-icon-dark.svg);
+      &:hover {
+        background-image: url(/blog/wp-content/themes/mashwork2014/images/facebook-icon.svg);
+      }
     }
   }
   .linkedin-share-link {
     a {
-      background-image: url(/blog/wp-content/themes/mashwork2014/images/linkedin-icon.svg);
+      background-image: url(/blog/wp-content/themes/mashwork2014/images/linkedin-icon-dark.svg);
+      &:hover {
+        background-image: url(/blog/wp-content/themes/mashwork2014/images/linkedin-icon.svg);
+      }
     }
   }
 }
@@ -373,7 +391,7 @@ blockquote {
     height: 25px;
     line-height: 25px;
     padding: 0 5px;
-    background-color: $grayLight;
+    background-color: $grayLighter;
     color: $grayMed;
     display: inline-block;
     &:hover {
@@ -396,10 +414,10 @@ blockquote {
     max-width: 100%;
     @include rem('font-size', 21px);
     a.page {
-      background-color: $grayLight;
+      background-color: $grayLighter;
       color: $grayMed;
       &:hover {
-        background-color: darken($grayLight,5%);
+        background-color: darken($grayLighter,5%);
         color: $grayDark;
       }
     }

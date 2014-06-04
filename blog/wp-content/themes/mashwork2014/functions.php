@@ -13,19 +13,23 @@ add_filter('the_content', 'filter_ptags_on_images');
 
 /**
  * Attach a class to linked images' parent anchors
- * e.g. a img => a.img img
+ * Works for existing content
  */
-function give_linked_images_class($html, $id, $caption, $title, $align, $url, $size, $alt = '' ){
-   $classes = 'img'; // separated by spaces, e.g. 'img image-link'
+function give_linked_images_class($content) {
 
-   // check if there are already classes assigned to the anchor
-   if ( preg_match('/<a.*? class=".*?">/', $html) ) {
-      $html = preg_replace('/(<a.*? class=".*?)(".*?>)/', '$1 ' . $classes . '$2', $html);
-   } else {
-      $html = preg_replace('/(<a.*?)>/', '$1 class="' . $classes . '" >', $html);
-   }
-   return $html;
+  $classes = 'img'; // separate classes by spaces - 'img image-link'
+
+  // check if there are already a class property assigned to the anchor
+  if ( preg_match('/<a.*? class=".*?"><img/', $content) ) {
+    // If there is, simply add the class
+    $content = preg_replace('/(<a.*? class=".*?)(".*?><img)/', '$1 ' . $classes . '$2', $content);
+  } else {
+    // If there is not an existing class, create a class property
+    $content = preg_replace('/(<a.*?)><img/', '$1 class="' . $classes . '" ><img', $content);
+  }
+  return $content;
 }
-add_filter('image_send_to_editor','give_linked_images_class',10,8);
+
+add_filter('the_content','give_linked_images_class');
 
 ?>

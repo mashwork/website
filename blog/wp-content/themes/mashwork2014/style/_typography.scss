@@ -27,10 +27,10 @@ p {
   @include rem('line-height', 28px);
   font-weight: 300;
   margin-bottom: 20px;
-  @include max-width($screen-xs) {
-    @include rem('font-size', 16px);
-    @include rem('line-height', 21px);
-  }
+  // @include max-width($screen-xs) {
+  //   @include rem('font-size', 16px);
+  //   @include rem('line-height', 21px);
+  // }
 }
 
 b, strong {
@@ -99,7 +99,7 @@ h4 {
     color: $mashRed;
     &:hover {
       text-decoration: none;
-      background-color: transparentize($mashRed,.25);
+      background-color: transparentize($mashRed,.925);
     }
   }
 }
@@ -141,6 +141,7 @@ h4 {
 }
 
 .wp-caption-text {
+  margin-top: 10px;
   @include rem('font-size', 18px);
   @include max-width($screen-xs) {
     @include rem('font-size', 16px);
