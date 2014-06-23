@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: $offWhite;
+  background-color: $white;
 }
 
 .container {
@@ -107,6 +107,7 @@ hr {
 
 .canvs-site-link {
   @extend .btn-teal-hollow;
+  padding: 0 30px;
   width: auto;
 }
 
@@ -412,12 +413,12 @@ blockquote {
   .wp-pagenavi {
     display: inline-block;
     max-width: 100%;
-    @include rem('font-size', 21px);
+    @include rem('font-size', 18px);
     a.page {
-      background-color: $grayLighter;
+      // background-color: $grayLighter;
       color: $grayMed;
       &:hover {
-        background-color: darken($grayLighter,5%);
+        background-color: $grayLighter;
         color: $grayDark;
       }
     }
