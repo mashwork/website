@@ -5,7 +5,6 @@
  */
 ?>
 
-	
 <footer class="page-footer">
   <ul class="social-links">
     <li class="twitter-link"><a href="https://www.twitter.com/mashwork" target="_blank"><img src="/blog/wp-content/themes/mashwork2014/images/twitter-icon.svg" class="social-icon"/></a></li>
