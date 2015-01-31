@@ -1,5 +1,5 @@
 *.sass-cache
-blog/wp-content/mashwork2014/style/.sass-cache
+blog/wp-content/themes/mashwork2014/style/.sass-cache
 
 blog/*
 !blog/wp-content/
